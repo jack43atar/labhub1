@@ -1,0 +1,86 @@
+/**************** Menu Items ****************/
+.vertical-menu a,
+.vertical-menu a,
+.vertical-menu ul li a {
+    padding: 0 0 10px 0;
+    text-transform: capitalize;
+    line-height: 24px;
+    max-width: max-content;
+    min-width: inherit;
+    margin-bottom: 11px;
+    font-family: "Segoe UI Semibold";
+
+}
+
+.p-b_0 {
+    padding-bottom: 0;
+}
+
+.p-t_0 {
+    padding-top: 0;
+}
+
+.vertical-menu li {
+    min-height: 48px;
+}
+
+#menu-item-about .vertical-menu {
+    border-right: inherit;
+}
+
+#menu-item-lab_res .vertical-menu {
+    border-right: inherit;
+    margin-top: 40px;
+}
+
+#menu-item-about .head_name,
+#menu-item-lab_res .head_name {
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    min-height: inherit;
+}
+
+#menu-item-about .sub-menu-0,
+#menu-item-lab_res .sub-menu-0 {
+    padding-bottom: 32px;
+}
+
+nav .vertical-menu > li a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.second_navbar_area {
+    padding-left: 500px;
+}
+
+.vertical-menu ul {
+    margin-left: 20px;
+}
+
+.vertical-menu .second_sub_menu {
+    margin-left: 401px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+nav ul.sub-menu-0 {
+    padding-bottom: 74px;
+    /*max-height: 532px;*/
+	max-height: fit-content;
+}
+
+.menu-item > a{
+    color: rgba(0,0,0,.5);
+}
+
+.active_nav_menu {
+    color: black!important;
+}
+/********************************************/

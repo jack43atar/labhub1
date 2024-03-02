@@ -1,0 +1,179 @@
+.smarter_business {
+    background-image: url("../images/bg-image.png");
+}
+.business_card {
+    border: solid 1px #8a8a8a;
+    width: 30%;
+    border-radius: unset;
+    cursor: pointer;
+    margin: 0 18px  60px 18px;
+}
+.business_card_body {
+    padding: 61px 70px 45px 70px;
+}
+.business_card_footer {
+    padding: 23px 0;
+    background-color: #8a8a8a;
+}
+.business_card_footer {
+    text-align: center;
+    font-family: "Segoe UI Semibold";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+    color: #ffffff;
+}
+.business_card .business_card_body h2 {
+    font-family: "Segoe UI Semibold";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 22px;
+}
+.business_card_body p {
+    font-family: "Segoe UI Semibold";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.31;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+.active1 {
+    border: 1px solid #700203;
+}
+.active1 .business_card_footer {
+    background-color: #700203;
+}
+
+.price_per_user {
+    display: flex;
+    margin-bottom: 44px;
+    padding-left: 60px;
+}
+.price_per_user h2 {
+    font-family: "segoe-ui-bold";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.35;
+    color: #1a1a1a;
+    width: 25%;
+}
+.business_massaging_boxes {
+    display: flex;
+    padding-left: 60px;
+    justify-content: space-between;
+}
+.business_massging_list span {
+    width: 32px;
+    height: 32px;
+    background-color: #9b0405;
+    border-radius: 50%;
+   display: block;
+    position: relative;
+}
+.product_area {
+    padding: 56px 163px 0 163px;
+}
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #9b0405;
+    display: flex;
+    align-items: center;
+}
+.business_massging_list h2 {
+    font-family: "Segoe UI Semibold";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+    color: #700203;
+    text-decoration: underline;
+    margin-top: 10px;
+    padding-left: 60px;
+    margin-bottom: 33px;
+}
+.messages p {
+    font-family: "segoe-ui";
+    font-size: 18px;
+    line-height: 1.33;
+    color: #1a1a1a;
+    width: 260px;
+}
+.messages {
+    width: 23%;
+}
+.long p {
+    width: 100%;
+}
+.business_massging_list {
+    margin-bottom: 60px;
+}
+.long span {
+    width: 10px;
+    height: 10px;
+    background-color: #1a1a1a;
+    display: block;
+    margin-top: 6px;
+    margin-right: 13px;
+}
+.long li {
+    display: flex;
+}
+
+
+@media( max-width: 1500px) {
+    .product_area {
+        padding: 56px 15px 0 15px;
+    }
+}
+@media( max-width: 1300px) {
+    .business_card_body {
+        padding: 61px 11px 45px 11px;
+    }
+
+    .mobility_boxes {
+        padding: 0 10px;
+    }
+
+    .messages p {
+        font-size: 14px;
+    }
+}
+@media( max-width: 1100px) {
+    .mobility_boxes {
+        justify-content: center;
+    }
+    .business_card_body {
+        padding: 61px 11px 0 11px;
+    }
+    .messages {
+        width: 24%;
+    }
+    .messages p {
+        width: 100%;
+    }
+    .price_per_user h2 {
+        font-size: 17px;
+    }
+}
+@media( max-width: 800px) {
+    .business_card {
+        width: 43%;
+    }
+}
+@media( max-width: 700px) {
+    .product_area {
+        overflow-x: scroll;
+    }
+    .messages {
+        width: 200px;
+    }
+}
+@media( max-width: 535px) {
+    .business_card {
+        width: 90%;
+    }
+}

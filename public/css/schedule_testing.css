@@ -1,0 +1,334 @@
+#schedule_testing {
+    font-size: 18px;
+    color: #1A1A1A;
+    font-family: "Segoe UI Semibold";
+}
+
+.schedule_testing_banner {
+    width: 1512px;
+    display: flex;
+    margin: auto;
+}
+
+.schedule_testing_banner .best_team .img_banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.schedule_testing_banner .info_bar {
+    width: 648px;
+    margin-right: 79px;
+}
+
+.schedule_testing_banner .info_bar > p {
+    margin-bottom: 23px;
+    line-height: 24px;
+}
+
+
+.schedule_testing_banner .best_team {
+    width: 785px;
+}
+
+
+.schedule_testing_banner .best_team .head_name {
+    margin-bottom: 36px;
+}
+
+
+.workflows_banner {
+    margin-top: 76px;
+}
+
+.workflows_banner .head_name {
+    text-align: center;
+    margin-bottom: 115px;
+}
+
+.workflows_banner .head_name p {
+    color: #9B0405;
+    font-family: "segoe-ui-bold";
+}
+
+/* ----- Line and Circle ----- */
+
+.certificationProcess > div {
+    margin-bottom: 50px;
+}
+
+.certificationProcess .line_banner {
+    margin-bottom: 19px;
+}
+
+.certificationProcess .special_line {
+    max-width: 1000px;
+    margin: auto;
+    height: 2px;
+    background-color: #9b0405;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.certificationProcess .text_bar {
+    max-width: 1220px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.certificationProcess .day_is {
+    margin-bottom: 70px;
+    color: #9B0405;
+    font-family: "Segoe UI Semibold";
+}
+
+.certificationProcess .text_bar > div {
+    max-width: 230px;
+    text-align: center;
+}
+
+
+.certificationProcess .special_line .circle {
+    width: 24px;
+    height: 24px;
+    background-color: #9b0405;
+    border-radius: 50%;
+    display: block;
+}
+
+
+/**********************************************************************************************************************/
+.test_programs {
+    max-width: 955px;
+    margin: 76px 0 0 204px;
+    line-height: 24px;
+}
+
+.programs_list {
+    font-family: "Segoe UI";
+    margin: 27px 0;
+    line-height: 35px;
+}
+
+.test_programs.our_lab > div {
+    margin-bottom: 27px;
+}
+
+.test_programs.our_lab > div a {
+    text-decoration: underline;
+    color: #1A1A1A;
+}
+
+
+.reserve_lab {
+    max-width: 1512px;
+    margin: 76px auto;
+    display: flex;
+    color: #9B0405;
+}
+
+.reserve_lab .test_banner {
+    width: 710px;
+    display: flex;
+    padding: 34px 0 34px 60px;
+    box-shadow: 0 0 50px #00000029;
+    border-radius: 20px;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    font-size: 24px;
+}
+
+.test_banner.rfq {
+    margin-left: 92px;
+}
+
+.reserve_lab .test_banner .icon-bar {
+    margin-right: 50px;
+}
+
+.reserve_lab .test_banner .text_bar {
+    padding-top: 2px;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.locatedMap {
+    max-width: 1512px;
+    margin: 76px auto 0;
+}
+
+.locatedMap .map-responsive iframe {
+    margin: auto;
+}
+
+.locatedMap .container-fluid {
+    padding-right: inherit;
+    padding-left: inherit;
+}
+
+/* ******************* Media Screen ******************* */
+
+@media (max-width: 1512px) {
+    .schedule_testing_banner {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .schedule_testing_banner .info_bar {
+        width: 45%;
+    }
+
+    .schedule_testing_banner .best_team {
+        width: 50%;
+    }
+
+    .reserve_lab {
+        margin: 76px 15px;
+    }
+
+    .locatedMap {
+        margin: 76px 15px 0 !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .schedule_testing_banner {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .schedule_testing_banner .info_bar {
+        display: inline-block;
+        width: 100%;
+        text-align: justify;
+        margin-right: inherit;
+    }
+
+    .schedule_testing_banner .best_team {
+        width: 70%;
+        margin: 50px auto 0;
+        text-align: center;
+    }
+
+    .company_footer {
+        margin-top: 100px;
+    }
+
+    .test_banner.rfq {
+        margin-left: 50px;
+    }
+
+    .reserve_lab .test_banner .icon-bar {
+        margin-right: 20px;
+    }
+
+    .reserve_lab .test_banner {
+        padding: 25px 0 25px 15px;
+        font-size: 21px;
+    }
+
+    .workflows_banner {
+        margin: 76px 15px 0;
+    }
+    .certificationProcess .special_line {
+        max-width: 900px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .schedule_testing_banner .best_team {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .test_programs {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    body {
+        font-size: 14px !important;
+    }
+
+    .certificationProcess .special_line {
+        max-width: 700px;
+    }
+
+    .certificationProcess .text_bar > div {
+        max-width: 250px;
+    }
+    .reserve_lab .test_banner {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 800px) {
+    .reserve_lab {
+        display: inline-block;
+    }
+
+    .test_banner.rfq {
+        margin-left: unset;
+        margin-top: 15px;
+
+    }
+
+    .reserve_lab {
+        margin: 40px 15px;
+    }
+
+    .reserve_lab .test_banner {
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+
+    .reserve_lab .test_banner {
+        width: 100%;
+    }
+
+    .reserve_lab .test_banner .icon-bar {
+        width: 60px;
+    }
+
+    .reserve_lab .test_banner .icon-bar img {
+        width: 100%;
+    }
+
+    .workflows_banner {
+        margin-top: 50px;
+    }
+
+    .workflows_banner .head_name {
+        margin-bottom: 80px;
+    }
+
+    .test_programs {
+        margin-top: 40px
+    }
+
+}
+
+@media (max-width: 605px) {
+
+    .schedule_testing_banner {
+        margin-top: 70px;
+    }
+
+
+}

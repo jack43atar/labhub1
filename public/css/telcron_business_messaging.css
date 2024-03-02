@@ -1,0 +1,225 @@
+
+
+.telcron_smarter_business {
+background-image: url("../images/telephone.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.benefits h2 {
+    font-family: "segoe-ui-bold";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2.2;
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #000000;
+    margin-top: 83px;
+}
+.benefits p {
+    font-family: "Segoe UI Semibold";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2.2;
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #000000;
+}
+.notification h2 {
+    font-family: "Segoe UI Semibold";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+    color: #700203;
+    text-align: left;
+    margin-bottom: 17px;
+    margin-top: 0;
+}
+.notification p {
+    font-family: "segoe-ui";
+    font-size: 18px;
+    line-height: 1.33;
+    color: #1a1a1a;
+    text-align: left;
+    width: 400px;
+}
+.notification span {
+    width: 20px;
+    height: 20px;
+    background-color: #9b0405;
+    display: block;
+    border-radius: 50%;
+    margin-right: 25px;
+    margin-top: 6px;
+}
+.notification {
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+}
+.groups {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 52px 0 0;
+    justify-content: center;
+
+}
+.pricing {
+    font-family: "segoe-ui-bold";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2.2;
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #700203;
+    margin-bottom: 52px;
+}
+.owl-carousel .business_card {
+    width: unset;
+}
+.owl-carousel .business_card_body {
+    height: 290px;
+}
+.owl-nav {
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.short {
+    width: 30%;
+    margin-right: 94px;
+}
+.long_line {
+    width: 70%;
+}
+.long_line p, .short p {
+    width: unset;
+    margin-top: 16px;
+}
+.details {
+    font-family: "Segoe UI Semibold";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 56px;
+}
+.owl-nav span {
+   display: none;
+}
+button.owl-prev {
+    left: -39px;
+    position: absolute;
+    outline: none;
+}
+button.owl-next {
+    right: -39px;
+    position: absolute;
+    outline: none;
+}
+button.owl-next:after {
+    content: "";
+    background-image: url("../images/Arrow22.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 20px;
+    height: 33px;
+}
+button.owl-prev:after {
+    content: "";
+    background-image: url("../images/Arrow2.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 20px;
+    height: 33px;
+}
+@media(max-width: 1575px) {
+    .notification {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .notification p {
+        width: 365px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-wrap {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+}
+.owl-carousel .owl-nav{
+    height: 0px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #2caae1;
+}
+
+
+.owl-carousel .item {
+    text-align: center;
+}
+.owl-carousel .nav-btn{
+    height: 47px;
+    position: absolute;
+    width: 26px;
+    cursor: pointer;
+    top: 100px !important;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled{
+    pointer-events: none;
+    opacity: 0.2;
+}
+.owl-carousel .prev-slide:hover{
+    background-position: 0px -53px;
+}
+.owl-carousel .next-slide:hover{
+    background-position: -24px -53px;
+}
+
+span.img-text {
+    text-decoration: none;
+    outline: none;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    cursor: pointer;
+    width: 100%;
+    font-size: 23px;
+    display: block;
+    text-transform: capitalize;
+}
+span.img-text:hover {
+    color: #2caae1;
+}

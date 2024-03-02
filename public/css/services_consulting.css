@@ -1,0 +1,372 @@
+.lab-process {
+    display: flex;
+    max-width: 1512px;
+    margin: auto;
+    padding-bottom: 43px;
+    border-bottom: 2px solid #9B0405;
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+    color: #1A1A1A;
+}
+
+.lab_review .text_banner {
+    width: 642px;
+    margin-right: 89px;
+}
+
+.lab_review .text_banner p {
+    margin-bottom: 44px;
+}
+
+.lab-process .img_banner {
+    width: 781px;
+}
+
+.lab-process .img_banner .lab_img {
+
+}
+
+
+.lab-process .img_banner .lab_result {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.lab-process .img_banner .lab_result h2 {
+    font-size: 20px;
+    color: #1A1A1A;
+    font-family: "Segoe UI Semibold";
+    margin: 15px 0 51px;
+}
+
+.lab-process .img_banner .lab_result span {
+    font-size: 16px;
+    font-family: "Segoe UI Semibold";
+    width: 130px;
+    display: inline-block;
+    text-align: left;
+    margin-right: 60px;
+}
+
+.lab-process .lab_result span:nth-child(1) {
+    color: #C4A164;
+}
+
+.lab-process .lab_result span:nth-child(1):before {
+    background-color: #C4A164;
+}
+
+.lab-process .lab_result span:nth-child(2) {
+    color: #9B0405;
+}
+
+.lab-process .lab_result span:nth-child(2):before {
+    background-color: #9B0405;
+}
+
+.lab-process .lab_result span:nth-child(3) {
+    color: #000000;
+}
+
+.lab-process .lab_result span:nth-child(3):before {
+    background-color: #000000;
+
+}
+
+.lab-process .lab_result span:before {
+    content: "";
+    display: flex;
+    width: 100%;
+    height: 2px;
+    background: red;
+    margin-bottom: 10px;
+}
+
+.price_analytics {
+    display: block;
+    max-width: 1512px;
+    margin: auto;
+    font-family: "segoe-ui-bold";
+    font-size: 18px;
+    color: #1A1A1A;
+}
+
+
+#consulting .price_analytics .info > h3 {
+    margin: 43px 0;
+    font-size: 18px;
+    width: 843px;
+}
+
+
+/* Table */
+
+#consulting table {
+    max-width: 1457px;
+}
+
+#consulting .table thead th, #consulting .table-bordered td, #consulting .table-bordered th {
+    border: 1px solid #707070;
+    text-align: right;
+}
+
+#consulting .lab_ratings .lab_rat_td {
+    text-align: left;
+    min-width: 200px;
+}
+
+#consulting .lab_ratings .labs_row {
+    text-align: left;
+    min-width: 160px;
+}
+
+
+#consulting .price {
+    min-width: 90px;
+}
+
+#consulting .schedule {
+    min-width: 160px;
+}
+
+
+#consulting .empty_row > td {
+    height: 44px;
+}
+
+#consulting .d_b{
+    display: inline;
+}
+
+
+/* Lab Matrix */
+.lab_matrix .head_name h4 {
+    font-family: "Segoe UI Semibold";
+    text-transform: capitalize;
+}
+
+.lab_matrix .head_name {
+    margin-bottom: 17px
+}
+
+.lab_matrix .selection_by {
+    display: flex;
+}
+
+.lab_matrix .selection_by .list {
+    margin-right: 30px;
+    font-size: 16px;
+    width: 100%;
+    line-height: 30px;
+}
+
+.lab_matrix .selection_by .list > div {
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+.lab_matrix .selection_by .list > ul {
+    margin-top: 31px;
+}
+
+
+.lab_matrix li {
+    list-style: none;
+    font-size: 16px;
+}
+
+.lab_matrix li:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.lab_matrix li:nth-child(1):before {
+    background-color: #F0CF96;
+}
+
+.lab_matrix li:nth-child(2):before {
+    background-color: #C18E54;
+}
+
+.lab_matrix li:nth-child(3):before {
+    background-color: #E1B67B;
+}
+
+.lab_matrix li:nth-child(4):before {
+    background-color: #9B0405;
+}
+
+.lab_matrix li:nth-child(5):before {
+    background-color: #8A8A8A;
+}
+
+.lab_matrix li:nth-child(6):before {
+    background-color: #F8F8F8;
+    border: 1px solid #707070;
+}
+
+.lab_matrix {
+    display: flex;
+}
+
+.lab_matrix .img_banner {
+    height: 340px;
+    max-width: 340px;
+    margin-right: 68px;
+
+}
+
+.lab_matrix .matrix_overflow {
+    height: auto;
+    width: 100%;
+}
+
+/* @media Screen */
+
+
+@media (max-width: 1600px) {
+    .analytic-overview-container {
+        width: 100%;
+        margin-left: 15px;
+    }
+
+    .lab_review .text_banner {
+        width: 60%;
+        margin-right: 10px;
+    }
+
+    .lab-process .img_banner {
+        width: 40%;
+        margin-right: 10px;
+
+    }
+
+    .lab-process .img_banner img {
+        width: 100%;
+        height: auto;
+        display: block;
+
+    }
+
+    .lab-process .img_banner .lab_result span {
+        width: auto;
+        margin-right: 30px;
+
+    }
+
+    .lab-process {
+        margin: 0 15px;
+    }
+
+    #consulting .price_analytics .info > h3 {
+        margin: 43px 0 43px 15px;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    #consulting .lab_ratings .lab_rat_td {
+        width: auto;
+        padding: 5px;
+        min-width: inherit;
+
+    }
+
+    #consulting .price, #consulting .schedule {
+        min-width: inherit;
+    }
+
+
+    #consulting .table thead th, #consulting .table-bordered td, #consulting .table-bordered th {
+
+        font-size: 14px;
+    }
+
+    #consulting table {
+        width: 96%;
+        margin-left: 15px;
+    }
+
+    .lab_matrix .matrix_overflow {
+        width: 100%;
+    }
+
+    .lab_matrix .img_banner {
+
+        margin-right: 40px;
+        margin-left: 15px;
+    }
+
+    .lab_matrix li, .lab_matrix .selection_by .list {
+        font-size: 14px;
+    }
+
+    #consulting .price_analytics .info > h3 {
+        margin: 43px 0 43px 15px;
+        font-size: 18px;
+        width: 70%;
+    }
+
+    .analytic-overview-container {
+        width: 50%;
+    }
+
+    .analytic-overview-container > hr {
+        width: 50%;
+    }
+    #consulting .lab_ratings .labs_row{
+
+    }
+    #consulting .table-bordered thead td, .table-bordered tbody td {
+        width: inherit;}
+}
+
+
+@media (max-width: 1200px) {
+.lab-process {
+    display: block;}
+
+    #consulting .d_b{
+        display: block;
+    }
+    #consulting .lab_ratings .price, #consulting .lab_ratings .schedule {
+        text-align: left;
+    }
+    #consulting .table thead th, #consulting .table-bordered td, #consulting .table-bordered th {
+        text-align: center;
+    }
+    .lab_review .text_banner {
+        width: 100%;
+
+    }
+
+    .lab-process .img_banner {
+        width: 50%;
+        margin: auto;
+    }
+    .lab_matrix {
+        display: block;
+    }
+    .lab_matrix .img_banner {
+        margin: auto;
+    }
+    .lab_matrix .head_name {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .lab_matrix .selection_by {
+        margin: 0 15px;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+    #consulting .price_analytics .info > h3 {
+        font-size: 16px;}
+
+
+}

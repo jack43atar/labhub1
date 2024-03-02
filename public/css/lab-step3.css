@@ -1,0 +1,690 @@
+.font {
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+}
+
+.section_1 {
+}
+
+.second_menu {
+    justify-content: flex-end;
+}
+
+.business_signup {
+    margin-bottom: 0;
+}
+
+.section_2 {
+}
+
+.s2_sm_bl {
+    width: 1700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.s2_box_bl {
+    width: 440px;
+    margin-right: 0;
+    max-width: 495px;
+    text-align: justify;
+}
+
+.s2_box_bl:last-child {
+    margin-right: 50px;
+}
+
+.s2_box_title {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.section_3 {
+}
+
+.section_3 {
+}
+
+.s3_sm_bl {
+    width: 1700px;
+    margin: 0 auto;
+    padding: 55px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.s3_maine_box {
+    /*
+    width: 495px;
+    */
+    max-width: 495px;
+    margin-right: 50px;
+    width: 100%;
+}
+
+.s3_maine_box:last-child {
+    margin-right: 0;
+}
+
+.s3_box_title {
+    margin: 20px 0;
+    font: Bold 18px/24px Segoe UI;
+    color: #9B0405;
+}
+
+.s3_box {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 550px;
+    border: 1px solid #8A8A8A;
+}
+
+.act_bord {
+    border-color: #700203;
+}
+
+.s3_box table {
+    width: 100%;
+    border-collapse: unset;
+}
+
+.s3_box table tbody tr td {
+    width: 50%;
+    text-align: start !important;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    border: none;
+}
+
+.s3_box table tbody tr {
+}
+
+.content_block1 {
+    margin: 0 0 20px 0;
+}
+
+.toggle_block {
+    padding: 0 5px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle_block:hover .toggle_block_close_btn {
+    display: contents;
+}
+
+.toggle_block:hover .toggle_block_text {
+    color: #8A8A8A;
+}
+
+.toggle_block_text {
+}
+
+.toggle_block_close_btn {
+    display: none;
+    font-size: 24px;
+    color: #8A8A8A;
+}
+
+.content_title {
+    margin: 5px 0 10px 0;
+    color: #9B0405;
+    padding: 0 5px;
+}
+
+.content_text {
+    padding: 0 5px;
+}
+
+.red_text {
+    color: #9B0405;
+}
+
+.text_d_red {
+    text-decoration-color: red !important;
+}
+
+.s3_btn_bl {
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+.s3_btn_bl button {
+    width: 449px;
+    height: 63px;
+    margin: 10px 0 20px 0;
+    border-radius: 32px;
+    background-color: #8A8A8A;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+.s3_btn_bl button.active {
+    background-color: #700203;
+}
+
+.l_text {
+    padding: 0 5px;
+}
+
+.modal_fon {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+.modal_main_block {
+    padding: 50px 150px;
+    background-color: white;
+}
+
+.modal_container {
+}
+
+.modal_title {
+    text-align: center;
+    color: #9B0405;
+    font-size: 24px;
+}
+
+.modal_text span {
+    font-weight: bold;
+}
+
+.modal_text {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.modal_img_block {
+    margin: 0 auto;
+}
+
+.modal_btn_block {
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+.modal_btn {
+    width: 449px;
+    height: 63px;
+    border: none;
+    outline: none;
+    border-radius: 32px;
+    color: white;
+    background-color: #700203;
+}
+
+.modal_link {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    height: 24px;
+    width: 228px;
+    margin: 10px auto 0;
+}
+
+.modal_link:hover {
+    color: #000;
+}
+
+
+#lab_step3 .labs_steps a {
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.font_size {
+    font-size: 18px;
+}
+
+#lab_step3 .lab_second_menu {
+    background-color: #1a1a1a;
+    padding-bottom: 53px;
+    margin-bottom: 70px;
+    min-height: 310px;
+}
+
+
+#lab_step3 .labs_steps {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 101px;
+    margin-top: 30px;
+    position: relative;
+}
+
+
+#lab_step3 .rate_line {
+    width: 520px;
+    height: 1px;
+    background-color: #8a8a8a;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+
+#lab_step3 .content_block1 .active_block p {
+    color: #8A8A8A;
+}
+
+
+.rates {
+    width: 100%;
+}
+
+#lab_step3 .check_availability {
+    width: 95%;
+    margin: auto;
+}
+
+#lab_step3 .rates {
+    width: 100%;
+}
+
+#lab_step3 .rate_line {
+    width: 500px;
+    height: 1px;
+    background-color: #8a8a8a;
+    display: flex;
+    align-items: center;
+    margin: auto 0 auto 30px;
+}
+
+
+#lab_step3 .labs_steps li:first-child {
+    position: relative
+}
+
+.advance_code {
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    position: absolute;
+    top: -3px;
+    right: 42px;
+    border-radius: 50%;
+    display: none;
+}
+#lab_step3 .second_menu{
+    justify-content: flex-end !important;
+}
+
+
+/* Media Screens */
+
+@media (max-width: 1850px) {
+    .inputs_line select, .inputs_line input {
+        width: 48%;
+    }
+
+    .choose_box {
+        width: 32%;
+    }
+
+    .choose_area {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 1750px) {
+    .s2_sm_bl {
+        width: 97%;
+    }
+
+    .s3_sm_bl {
+        width: 97%;
+    }
+
+    #lab_step3 .rate_line {
+        margin-left: 0;
+        width: 470px;
+    }
+
+    #lab_step3 .check_availability .rates.active > span {
+        left: 0;
+    }
+
+}
+
+@media (max-width: 1600px) {
+    .rates {
+        width: 20%;
+    }
+
+    .rate_line {
+        width: 100%;
+    }
+
+    #lab_step3 .rate_line {
+        width: 400px;
+    }
+
+    .rates {
+        width: 460px;
+    }
+
+
+}
+
+@media (max-width: 1550px) {
+    .s2_box_bl {
+        width: 30%;
+    }
+
+    .s3_maine_box {
+        width: 30%;
+        max-width: unset;
+    }
+
+    .s3_btn_bl button {
+        width: 200px;
+        height: 50px;
+    }
+
+    .s2_box_bl {
+    }
+    .navbar_telcron a {
+        font-size: 14px;}
+}
+
+@media (max-width: 1400px) {
+    .testing_lab {
+        height: auto;
+    }
+
+    .rates h2 {
+        font-size: 17px;
+    }
+
+    .select_your_booking {
+        margin: 0 40px;
+    }
+
+    .labs_steps {
+        margin-top: 20px;
+    }
+
+    .section_2 .s2_box_bl {
+        width: 27%;
+    }
+
+    #lab_step3 .rate_line {
+        width: 350px;
+    }
+
+    .rates {
+        width: 430px;
+    }
+
+}
+
+@media (max-width: 1300px) {
+    .rates {
+        width: 100%;
+    }
+
+    #lab_step3 .rate_line {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .lab_type h3 {
+        font-size: 16px;
+        margin-right: 25px;
+    }
+
+    .input_line {
+        font-size: 16px;
+    }
+
+    .choose_area h2 {
+        font-size: 16px;
+    }
+
+    .navbar_telcron li {
+        margin-left: 26px;
+    }
+
+    .navbar_telcron a {
+        font-size: 14px;
+    }
+
+    .choose_box {
+        width: 500px;
+        margin: 20px;
+    }
+
+    .choose_area {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .information {
+        width: 90%;
+    }
+
+    .s3_sm_bl {
+        width: 99%;
+    }
+
+    .s3_maine_box {
+        width: 33%;
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    #lab_step3 .check_availability .rates.active > span {
+        top: -45px;
+        font-size: 16px;
+    }
+
+    #lab_step3 .section_1 .labs_steps {
+        margin-bottom: 50px;
+    }
+
+    #lab_step3 .section_2 .s2_box_bl:last-child {
+        margin-right: 0;
+    }
+
+    .labs_steps {
+        flex-wrap: wrap;
+    }
+
+    .labs_steps a {
+        margin: 20px 25px;
+        display: block;
+    }
+
+    .check_availability {
+        flex-wrap: wrap;
+    }
+
+    .rates {
+        width: 25%;
+        margin: 30px;
+    }
+
+    .lab_type::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    .section_2 .s2_box_bl {
+        width: 50%;
+    }
+
+    .s2_sm_bl {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .s2_box_bl {
+        width: 60%;
+        max-width: unset;
+    }
+
+    .s3_sm_bl {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .s3_maine_box {
+        margin-right: 0;
+        width: 70%;
+    }
+
+    .modal_main_block {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .rates {
+        width: 70%;
+    }
+
+    .select_your_booking {
+        margin: 0 20px;
+    }
+
+    .labs_steps {
+        margin-bottom: 0;
+    }
+
+    .labs_steps a {
+        margin: 20px 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .booking_area {
+        flex-wrap: wrap;
+    }
+
+    .select_your_booking {
+        margin: 58px 20px auto;
+    }
+
+    .lab_second_menu {
+        margin-bottom: 0;
+    }
+
+    .research {
+        height: 50px;
+    }
+
+    .modal_main_block {
+        padding: 10px 0;
+        margin: auto;
+        width: 90%;
+
+    }
+
+    .modal_img_block img {
+
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+
+    .modal_img_block {
+        width: 80%;
+        margin: auto;
+        display: flex;
+    }
+
+    .modal_btn {
+        width: 350px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 600px) {
+    .inputs_line select, .inputs_line input {
+        width: 100%;
+    }
+
+    .inputs_line select, .inputs_line input, .address input {
+        height: 55px;
+    }
+
+    .choose_area {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 568px) {
+    .booking_area {
+        justify-content: flex-start;
+    }
+
+    .choose_box {
+        margin: 13px;
+    }
+}
+
+@media (max-width: 550px) {
+    .information button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .information p {
+        font-size: 16px;
+    }
+
+    .preference {
+        font-size: 14px;
+    }
+
+    #lab_step3 .lab_second_menu .labs_steps a {
+        text-transform: capitalize;
+        font-size: 14px;
+    }
+
+    #lab_step3 .section_1 .labs_steps {
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .s2_box_bl {
+        width: 97%;
+        margin-right: 0;
+    }
+
+    .s2_box_bl:last-child {
+        margin-right: 0;
+    }
+
+    .s3_maine_box {
+        width: 97%;
+    }
+
+    .modal_btn {
+        width: 300px;
+    }
+}

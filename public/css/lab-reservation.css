@@ -1,0 +1,1026 @@
+#lab_reservation .second_menu {
+    justify-content: flex-end !important;
+}
+
+.lab_second_menu {
+    background-color: #1a1a1a;
+    padding-bottom: 53px;
+    margin-bottom: 70px;
+}
+
+.labs_steps a {
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.72px;
+    color: #ffffff;
+    margin: 0 40px;
+}
+
+.labs_steps {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#lab_step3 .rates.active .rate_line span, #lab_step3 .rates.active .rate_line {
+    background-color: #fff;
+}
+
+#lab_step3 .check_availability .rates.active > span {
+    width: 227px;
+    height: 27px;
+    position: absolute;
+    top: -60px;
+    bottom: 0;
+    left: 30px;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+#lab_step3 .rates.active {
+    position: relative;
+}
+
+.rate_line {
+    width: 350px;
+    height: 1px;
+    background-color: #8a8a8a;
+    display: flex;
+    align-items: center;
+}
+
+.rate_line span {
+    width: 32px;
+    height: 32px;
+    background-color: #8a8a8a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check_availability {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.rates h2 {
+    font-family: "Segoe UI Semibold";
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.rates {
+    margin: 0 21px;
+}
+
+.booking_area h2 {
+    font-family: "Segoe UI Semibold";
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 22px;
+}
+
+.booking_area p {
+    font-family: "Segoe UI Semibold";
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #1a1a1a;
+}
+
+.booking_area {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 55px;
+}
+
+.select_your_booking {
+    margin: 0 100px;
+}
+
+
+
+.research {
+    font-family: "Segoe UI Semibold";
+    width: 100%;
+    background: inherit;
+    -webkit-appearance: none;
+    outline: none;
+    height: 63px;
+    opacity: 0.5;
+    border: solid 1px #000000;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.research_time {
+    margin-top: 80px;
+}
+
+.choose_box {
+    width: 495px;
+    margin-right: 55px;
+
+}
+
+.choose_area {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 160px;
+}
+
+.choose_area h2 {
+    font-family: "segoe-ui-bold";
+    font-size: 18px;
+    font-weight: bold;
+    color: #9b0405;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+    margin-top: 60px;
+}
+
+.lab_type_box {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 23px;
+    cursor: pointer;
+}
+
+.lab_type {
+    width: 100%;
+    height: 824px;
+    border: solid 1px #8a8a8a;
+    overflow-x: auto;
+}
+
+.lab_type h3 {
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.lab_type p {
+    font-family: "Segoe UI Semibold";
+    font-size: 16px;
+    font-weight: 600;
+    color: #8a8a8a;
+}
+
+
+/* width */
+.lab_type::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+.lab_type::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    background-color: #9b0405;
+}
+
+/* Handle */
+.lab_type::-webkit-scrollbar-thumb {
+    width: 12px;
+    border-radius: 11px;
+    background-color: #f8f8f8;
+    border: 4px solid #9b0405;
+}
+
+.input_line {
+    display: flex;
+    margin-bottom: 14px;
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.testing_lab {
+    width: 100%;
+    /*height: 652px;*/
+    border: solid 1px #700203;
+    padding: 23px;
+}
+
+.testing_lab label {
+    width: 50%;
+}
+
+.testing_lab p {
+    width: 50%;
+}
+
+.lab_total {
+    margin-top: 30px;
+}
+
+.your_total {
+    font-weight: bold;
+    color: #9b0405;
+    font-family: "segoe-ui-bold";
+}
+
+.all_prices {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.all_prices label {
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.all_prices a {
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+    font-weight: 600;
+    color: #9b0405;
+    text-decoration: underline;
+}
+
+.testing_lab button {
+    width: 100%;
+    height: 63px;
+    border-radius: 32px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    background-color: #700203;
+    border: none;
+    outline: none;
+    font-family: "Segoe UI Semibold";
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 83px;
+}
+
+
+/*step 2*/
+.choose_box .testing_lab button {
+    width: 100%;
+    height: 63px;
+    background: #700203 0% 0% no-repeat padding-box;
+    border-radius: 32px;
+    border: none;
+    outline: none;
+    font-family: "Segoe UI Semibold";
+    font-size: 20px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.login_new_reservation {
+    width: 100%;
+    border: 1px solid #8A8A8A;
+    text-align: center;
+    padding: 26px 22px;
+}
+
+.login_new_reservation input {
+    width: 100%;
+    height: 63px;
+    border: 1px solid #000000;
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+    padding-left: 23px;
+    opacity: 0.5;
+}
+
+.login_new_reservation input::placeholder {
+    color: #1A1A1A;
+}
+
+.login_new_reservation input:nth-child(1) {
+    margin-bottom: 30px;
+}
+
+.forgot_password {
+    text-align: left;
+}
+
+.forgot_password a {
+    font-family: "lightsegu.ttf";
+    font-size: 18px;
+    color: #1A1A1A;
+    opacity: 1;
+    margin-top: 9px;
+    margin-bottom: 49px;
+    display: block;
+}
+
+.reservation_box button {
+    background: #8A8A8A 0% 0% no-repeat padding-box;
+}
+
+
+/*step 3*/
+
+
+.information {
+    width: 61%;
+}
+
+.inputs_line select, .inputs_line input {
+    width: 460px;
+    height: 63px;
+    border: 1px solid #000000;
+    opacity: 0.5;
+    padding-left: 23px;
+}
+
+.address input {
+    width: 100%;
+    height: 63px;
+    border: 1px solid #000000;
+    opacity: 0.5;
+    padding-left: 23px;
+}
+
+.inputs_line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.information input, .information select {
+    margin-bottom: 30px;
+}
+
+.information p {
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+    color: #1A1A1A;
+    opacity: 1;
+}
+
+.contact_information p {
+    margin-bottom: 25px;
+}
+
+/* The container */
+.preference {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Segoe UI Semibold";
+    color: #636364;
+    opacity: 1;
+}
+
+/* Hide the browser's default checkbox */
+.preference input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.preference_checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #636364;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.preference_checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.preference input:checked ~ .preference_checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.preference .preference_checkmark:after {
+    left: 9px;
+    top: 4px;
+    width: 6px;
+    height: 12px;
+    border: solid #636364;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.testing_service {
+    width: 100%;
+    height: 633px;
+    border: 1px solid #000000;
+    border-right: none;
+    padding: 20px 23px;
+    overflow-y: scroll;
+    margin-top: 25px;
+}
+
+.checkes {
+    margin-top: 25px;
+}
+
+
+/* width */
+.testing_service::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+.testing_service::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    background-color: #9b0405;
+}
+
+/* Handle */
+.testing_service::-webkit-scrollbar-thumb {
+    width: 40%;
+    border-radius: 11px;
+    background-color: #f8f8f8;
+    border: 4px solid #9b0405;
+}
+
+.product_description {
+    width: 100%;
+    height: 393px;
+    border: 1px solid #000000;
+    padding: 20px 23px;
+    margin-top: 30px;
+}
+
+.information_and_comments textarea {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #000000;
+    opacity: 0.5;
+    margin-top: 16px;
+    padding: 20px 23px;
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+}
+
+.information_and_comments textarea::placeholder {
+    color: #1A1A1A;
+    opacity: 0.5;
+}
+
+.information_and_comments {
+    margin-top: 30px;
+}
+
+.reservation_guarantee p {
+    margin-bottom: 25px;
+}
+
+.guaranteed {
+    display: flex;
+}
+
+.guaranteed h2 {
+    margin-right: 23px;
+}
+
+.information button {
+    width: 449px;
+    height: 63px;
+    background: #700203 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 3px #00000033;
+    border-radius: 32px;
+    border: none;
+    outline: none;
+    font-family: "Segoe UI Semibold";
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
+.reservation_guarantee .details {
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+    color: #8A8A8A;
+}
+
+.complate_rezervation {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.cards img {
+    width: 82px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#c {
+    width: 410px;
+    padding: 40px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #eee;
+    border-top-width: 2px;
+}
+
+i {
+    font-style: normal;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.4rem;
+    font-weight: 300;
+}
+
+h1 b {
+    font-weight: 500;
+}
+
+input {
+    padding: 5px 10px;
+}
+
+table {
+    border-collapse: collapse;
+    cursor: default;
+    /* text-align: center; */
+    width: 100%;
+}
+
+table td {
+    display: inline-block;
+    width: 14.2%;
+    /* height: 60px; */
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table td:hover i {
+    background: #eee;
+}
+
+table td:active i {
+    transition: none;
+    transform: scale(0.95);
+}
+
+table td i {
+    font-style: normal;
+}
+
+table td i {
+    display: inline-block;
+    position: relative;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 50%;
+    transition: all .2s ease;
+}
+
+table thead td {
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(71, 71, 71);
+}
+
+.sel1,
+.sel2,
+.range {
+    color: #fff;
+}
+
+table td.range i {
+    background: rgba(172, 1, 4, 0.555);
+}
+
+table td.sel1 i {
+    background: #700203;
+}
+
+table td.sel2 i {
+    background: #700203;
+}
+
+.sel1 i,
+.sel2 i {
+    animation: bounce .2s ease-in-out 1;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+td.disabled,
+td.notCurMonth {
+    color: rgb(129, 129, 129);
+    font-size: 1.2rem;
+}
+
+h1 {
+    margin: 0 0 30px;
+}
+
+p.sub {
+    margin: -20px 0 60px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+p.sub i {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #f6b;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+#disp {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    text-transform: capitalize;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.8rem;
+    background: transparent;
+    color: rgb(109, 109, 109);
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    user-select: none;
+    touch-callout: none;
+}
+
+#month {
+    display: inline;
+    font-weight: 300;
+}
+
+#disp .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(151, 151, 151);
+    float: right;
+    width: 15%;
+    cursor: pointer;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    border-radius: 50%;
+    margin: 10px 10px 0 0;
+}
+
+#disp #prev {
+    float: left;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+#disp .nav:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#disp .nav:active {
+    transform: scale(0.9);
+}
+
+.nav.disabled {
+    opacity: .5;
+}
+
+#out1,
+#out2 {
+    color: #aaa;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+#calHelp {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+#calHelp div {
+    display: inline-block;
+    width: 50%;
+    margin: 0 0 20px;
+}
+
+#calHelp div.first {
+    width: auto;
+    padding: 0 10px 0 0;
+}
+
+#calHelp b {
+    font-weight: 400;
+}
+
+#calHelp i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 3px 0 0;
+    background: #333;
+    color: #fff;
+    border-radius: 50%;
+}
+
+#calHelp .active i {
+    background: #f6b;
+}
+
+#calHelp .disabled {
+    opacity: .3;
+}
+
+.log h4 {
+    margin: 20px 0 0;
+    font-weight: 500;
+}
+
+.log {
+    font-size: 1.2rem;
+    line-height: 150%;
+    color: #aaa;
+    margin-top: 30px;
+}
+
+.log p {
+    margin-top: 0;
+}
+
+.active-lab-type {
+    background-color: #700203;
+}
+.select_your_booking {
+    width: 495px;
+    margin-right: 176px;
+    margin-left: 50px;
+}
+
+.booking_area {
+    padding: 0 160px;
+}
+.booking_bar{
+
+}
+#lab_reservation .active .rate_line span {
+    background-color: #fff;
+}
+
+@media (max-width: 1500px) {
+    .choose_area {
+        padding: 0 10px;
+    }
+
+    .testing_lab button {
+        margin-top: 50px;
+    }
+    .booking_area {
+        padding: 0 10px;
+    }
+    .select_your_booking {
+        margin-right: 0;}
+}
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 1200px) {
+    .choose_area {
+        display: inline-block;
+    }
+
+    .choose_box {
+        width: 100%;
+        margin-right: inherit;
+        display: inline-block;
+    }
+
+    .lightpick__months {
+        background-color: inherit;
+    }
+
+    .lightpick {
+        width: 50%;
+    }
+
+    .rate_line {
+        width: 200px;
+    }
+
+    .rates h2 {
+        font-size: 16px;
+    }
+
+    .research {
+        width: 50%;
+    }
+
+    #full-and-part_select {
+        right: 0;
+        top: 138px;
+        left: inherit;
+        bottom: inherit;
+    }
+
+    .choose_box .testing_lab button {
+        width: 30%;
+    }
+
+    .button_banner {
+        width: 100%;
+        text-align: center;
+    }
+
+    .select_your_booking {
+        margin: 0 15px;
+        width: 30%;
+    }
+
+    .labs_steps a {
+        font-size: 16px;
+        margin: 0 15px;
+    }
+
+    .labs_steps {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #exampleModalCenter .signup_modal, #exampleModalCenter .login_modal {
+
+
+    }
+
+    #exampleModalCenter .modal-content .row {
+        display: inline-block;
+        width: 350px
+    }
+
+    #exampleModalCenter .modal-content {
+
+        width: unset;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .labs_steps a {
+        margin: 0 5px;
+    }
+
+    .rates {
+        margin: 0 5px;
+    }
+
+    .rate_line {
+        width: 150px;
+    }
+
+    .lightpick {
+        width: 80%;
+        margin: 30px 0 150px !important;
+    }
+
+    .choose_box .calend_m {
+        margin-top: 30px;
+        margin-bottom: inherit;
+    }
+
+    #full-and-part_select {
+        right: inherit;
+        top: inherit;
+        left: 0;
+        bottom: 0;
+    }
+
+    .lab_type {
+        height: 610px;
+    }
+
+
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: inherit !important;
+        margin: inherit !important;
+    }
+
+}
+
+.StripeElement {
+    box-sizing: border-box;
+
+    height: 40px;
+
+    padding: 10px 12px;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: white;
+
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+    border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+}
+#card-element {
+    width: 460px;
+    border: 1px solid #000000;
+    border-radius: 0;
+    opacity: 0.5;
+}
+.angle-down {
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-image: url(../images/angle-down.svg);
+    background-position: 95% 50%;
+    text-transform: capitalize;
+}
+.lab_type-usa, .lab_type-canada, .lab_type-germany,.lab_type-taiwan, .lab_type-austrailia ,.lab_type-uk {
+    display: none;
+}
+
+.lab_type_price {
+    display: flex;
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+
+}
+
+.price_sum {
+    margin-left: 5px;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+t

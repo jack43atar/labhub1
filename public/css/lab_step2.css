@@ -1,0 +1,49 @@
+/*Card Checked*/
+.inputGroup{
+    margin-right: 157px;
+}
+.inputGroup:last-child{
+    margin-right:0;
+}
+
+.cards{
+    justify-content: inherit;
+}
+
+.inputGroup label {
+    min-height: 40px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 200ms ease-in;
+    -webkit-tap-highlight-color: transparent;
+}
+.inputGroup .clickable.active:after {
+    width: 26px;
+    height: 26px;
+    content: "";
+    border: 1px solid #9B0405;
+    background-color: #9B0405;
+    background-image: url("../images/check.png");
+    background-repeat: no-repeat;
+    background-position: 4px 4px;
+    background-size: 70%;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+.inputGroup input {
+    visibility: hidden;
+}
+
+.form {
+    padding: 0 16px;
+    display: flex;
+}
+

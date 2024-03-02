@@ -1,0 +1,111 @@
+.business_login .login_area {
+    margin-top: 0;
+}
+.business_login {
+    background-image: url("../images/business-login.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 150px 0;
+}
+.plan p {
+    font-family: "segoe-ui-bold";
+    font-size: 45px;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+}
+.plan h2 {
+    font-family: "segoe-ui-bold";
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: end;
+}
+.business_login .login_area {
+    align-items: flex-end;
+}
+.business_login .login_buttons .active {
+    background-color: #ffffff;
+    color: #9b0405;
+    border: none;
+    margin-bottom: 14px;
+	cursor: pointer;
+}
+.business_login .login_buttons li {
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    backdrop-filter: blur(1px);
+    background-color: rgba(248,248,248, 0.1);
+    border-left: none;
+    margin-bottom: 20px;
+	cursor: pointer;
+}
+.business_login .login_inputs input {
+    background: url("../images/view.svg")97% no-repeat;
+}
+@media (max-width: 1200px) {
+    .plan p {
+        font-size: 38px;
+    }
+    .plan h2 {
+        font-size: 55px;
+    }
+    .business_login .login_area {
+        align-items: center;
+    }
+    .plan {
+        margin-left: 40px;
+    }
+    .business_login .login_inputs button, .sign_up button, .business_login .reset_area  {
+        margin-bottom: 30px;
+    }
+    .business_login .login_buttons .active  {
+        background-color: #700203;
+        color: #ffffff;
+    }
+    .business_login .login_buttons li {
+        color: #700203;
+    }
+    .business_login .box_middle, #forget, #password2, #reset, #password1 {
+        margin-top: 88px;
+    }
+}
+@media (max-width: 950px) {
+    .business_login .login_area {
+        flex-direction: column-reverse;
+    }
+    .business_login .box_middle_second {
+        margin-top: 0;
+    }
+    .plan {
+        margin-left: 0;
+    }
+}
+@media (max-width: 700px) {
+    .business_login .login_buttons li:nth-child(2) {
+        margin-left: 27px;
+    }
+    .login_buttons {
+        width: 87%;
+    }
+    .login_inputs input, .sign_up input, .login_inputs button, .sign_up button  {
+        height: 52px;
+    }
+    .business_login .reset_area button:nth-child(2) {
+        margin-left: 20px;
+    }
+    #forget h1, #reset h1 {
+        font-size: 27px;
+    }
+    .login_inputs_1 p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 500px) {
+    .plan h2 {
+        font-size: 45px;
+    }
+    .plan p {
+        font-size: 25px;
+    }
+}

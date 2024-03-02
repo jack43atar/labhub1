@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="382" viewBox="0 0 860 382">
+  <g id="Group_2985" data-name="Group 2985" transform="translate(-857 -407)">
+    <line id="Line_72" data-name="Line 72" x2="90.262" transform="translate(1422.659 583.746)" fill="none" stroke="#9b0405" stroke-width="2"/>
+    <text id="Typical_Product_Development_Cycle" data-name="Typical 
+Product 
+Development 
+Cycle" transform="translate(1286 541)" fill="#1a1a1a" font-size="27" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-48.081" y="0">Typical </tspan><tspan x="-53.848" y="36">Product </tspan><tspan x="-89.022" y="72">Development </tspan><tspan x="-33.177" y="108">Cycle</tspan></text>
+    <text id="Concept" transform="translate(1552 433)" fill="#9b0405" font-size="24" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Concept</tspan></text>
+    <ellipse id="Ellipse_338" data-name="Ellipse 338" cx="10.5" cy="11" rx="10.5" ry="11" transform="translate(1503 572)" fill="#9b0405"/>
+    <path id="Polygon_32" data-name="Polygon 32" d="M12.244.872a1,1,0,0,1,1.511,0l10.81,12.473A1,1,0,0,1,23.81,15H2.19a1,1,0,0,1-.756-1.655Z" transform="translate(1436 583) rotate(180)" fill="#9b0405"/>
+    <circle id="Ellipse_341" data-name="Ellipse 341" cx="10.875" cy="10.875" r="10.875" transform="translate(1497.944 423.645) rotate(-45)" fill="#9b0405"/>
+    <path id="Polygon_33" data-name="Polygon 33" d="M12.291.886a1,1,0,0,1,1.519,0L24.685,13.574a1,1,0,0,1-.759,1.651H2.174a1,1,0,0,1-.759-1.651Z" transform="translate(1392.071 477.627) rotate(135)" fill="#9b0405"/>
+    <path id="Polygon_34" data-name="Polygon 34" d="M12.291.886a1,1,0,0,1,1.519,0L24.685,13.574a1,1,0,0,1-.759,1.651H2.174a1,1,0,0,1-.759-1.651Z" transform="translate(1392.84 689.095) rotate(-135)" fill="#9b0405"/>
+    <line id="Line_75" data-name="Line 75" x2="90.262" transform="translate(1150.786 583.746) rotate(180)" fill="none" stroke="#9b0405" stroke-width="2"/>
+    <path id="Polygon_35" data-name="Polygon 35" d="M12.224.955a1,1,0,0,1,1.552,0l10.9,13.414A1,1,0,0,1,23.9,16H2.1a1,1,0,0,1-.776-1.631Z" transform="translate(1137 584)" fill="#9b0405"/>
+    <g id="Ellipse_349" data-name="Ellipse 349" transform="translate(1148.611 722.626) rotate(-90)" fill="none" stroke="#9b0405" stroke-width="2">
+      <circle cx="138.111" cy="138.111" r="138.111" stroke="none"/>
+      <circle cx="138.111" cy="138.111" r="137.111" fill="none"/>
+    </g>
+    <path id="Polygon_36" data-name="Polygon 36" d="M12.291.886a1,1,0,0,1,1.519,0L24.685,13.574a1,1,0,0,1-.759,1.651H2.174a1,1,0,0,1-.759-1.651Z" transform="translate(1180.604 478.396) rotate(45)" fill="#9b0405"/>
+    <path id="Polygon_37" data-name="Polygon 37" d="M12.291.886a1,1,0,0,1,1.519,0L24.685,13.574a1,1,0,0,1-.759,1.651H2.174a1,1,0,0,1-.759-1.651Z" transform="translate(1181.373 689.863) rotate(-45)" fill="#9b0405"/>
+    <ellipse id="Ellipse_354" data-name="Ellipse 354" cx="10.5" cy="11" rx="10.5" ry="11" transform="translate(1503 733)" fill="#9b0405"/>
+    <path id="Path_2011" data-name="Path 2011" d="M-1985-243" transform="translate(3498.464 668.516)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_2012" data-name="Path 2012" d="M-1961.486-300.709h-65.861l-64.827,64.308" transform="translate(3474.95 724.353)" fill="none" stroke="#9b0405" stroke-width="2"/>
+    <circle id="Ellipse_355" data-name="Ellipse 355" cx="10.875" cy="10.875" r="10.875" transform="translate(1075.326 744.446) rotate(135)" fill="#9b0405"/>
+    <path id="Path_2013" data-name="Path 2013" d="M0,0" transform="translate(1059.807 742.575) rotate(180)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_2014" data-name="Path 2014" d="M130.687,0H64.826L0,64.308" transform="translate(1190.494 744.446) rotate(180)" fill="none" stroke="#9b0405" stroke-width="2"/>
+    <path id="Path_2015" data-name="Path 2015" d="M0,0H65.859l64.825,64.308" transform="translate(1513.525 744.446) rotate(180)" fill="none" stroke="#9b0405" stroke-width="2"/>
+    <circle id="Ellipse_356" data-name="Ellipse 356" cx="10.875" cy="10.875" r="10.875" transform="translate(1070.863 434.275) rotate(-180)" fill="#9b0405"/>
+    <path id="Path_2016" data-name="Path 2016" d="M0,0H65.859l64.825,64.308" transform="translate(1059.927 423.104)" fill="none" stroke="#9b0405" stroke-width="2"/>
+    <circle id="Ellipse_357" data-name="Ellipse 357" cx="11" cy="11" r="11" transform="translate(1049 572)" fill="#9b0405"/>
+    <text id="_1-st_Prototype" data-name="1-st Prototype" transform="translate(1552 592)" fill="#9b0405" font-size="23" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">1-st Prototype</tspan></text>
+    <text id="_2-nd_Prototype" data-name="2-nd Prototype" transform="translate(1552 752)" fill="#9b0405" font-size="23" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">2-nd Prototype</tspan></text>
+    <text id="Market" transform="translate(1022 433)" fill="#9b0405" font-size="24" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="-77.191" y="0">Market</tspan></text>
+    <text id="Manufacturing" transform="translate(1022 593)" fill="#9b0405" font-size="24" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="-161.098" y="0">Manufacturing</tspan></text>
+    <text id="Pre-production_sample" data-name="Pre-production
+sample" transform="translate(1016 752)" fill="#9b0405" font-size="23" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="-158.687" y="0">Pre-production</tspan><tspan x="-74.379" y="31">sample</tspan></text>
+    <path id="Path_2017" data-name="Path 2017" d="M0,0S.011,14.544.011,33.836,0,77.168,0,77.168" transform="translate(1514.008 622)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="Telcron_facilitated_testing_occur_during_these_prototype_pre-production_phases" data-name="Telcron facilitated 
+testing occur during 
+these prototype 
+/ pre-production phases" transform="translate(1552 638)" fill="#1a1a1a" font-size="15" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Telcron facilitated </tspan><tspan x="0" y="20">testing occur during </tspan><tspan x="0" y="40">these prototype </tspan><tspan x="0" y="60">/ pre-production phases</tspan></text>
+    <text id="Final_compliance_tests_here_may_be_Telcron_managed_" data-name="Final compliance
+tests here (may be
+Telcron managed)" transform="translate(1020 648)" fill="#1a1a1a" font-size="15" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="-113.855" y="0">Final compliance</tspan><tspan x="-124.841" y="20">tests here (may be</tspan><tspan x="-121.736" y="40">Telcron managed)</tspan></text>
+    <path id="Path_2018" data-name="Path 2018" d="M0,0S.011,14.544.011,33.836,0,77.168,0,77.168" transform="translate(1060.524 624.832)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="Product_regulatory_compliance_management" data-name="Product regulatory
+compliance
+management" transform="translate(1020 488)" fill="#1a1a1a" font-size="15" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="-128.525" y="0">Product regulatory</tspan><tspan x="-77.776" y="20">compliance</tspan><tspan x="-90.132" y="40">management</tspan></text>
+    <path id="Polygon_38" data-name="Polygon 38" d="M12.244.872a1,1,0,0,1,1.511,0l10.81,12.473A1,1,0,0,1,23.81,15H2.19a1,1,0,0,1-.756-1.655Z" transform="translate(1163 583) rotate(180)" fill="#9b0405"/>
+    <path id="Path_2019" data-name="Path 2019" d="M0,0S.011,14.544.011,33.836,0,77.168,0,77.168" transform="translate(1060.524 463.832)" fill="none" stroke="#707070" stroke-width="1"/>
+  </g>
+</svg>

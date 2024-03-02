@@ -1,0 +1,248 @@
+.button1,
+.button2,
+.button3,
+.button4 {
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 33px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+    background-color: #2e2e2e;
+    background-image: url(../../images/labRating/tail-bg1.gif);
+    text-transform: uppercase;
+    font-family: droid sans, sans-serif;
+    border: none;
+    height: 33px;
+    cursor: pointer;
+    margin-right: 0px;
+}
+#card , #card1{
+    border-radius: 20px;
+    margin-bottom: 20px; 
+}
+ul li img {
+    margin-left: 40px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Star Rating CSS Start */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    background: #f1f1f1;
+}
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+}
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked)>input {
+    position: absolute;
+    display: none;
+}
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+.rate>input:checked~label {
+    color: #ffc700;
+}
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
+.rating-container .form-control:hover,
+.rating-container .form-control:focus {
+    background: #fff;
+    border: 1px solid #ced4da;
+}
+.rating-container textarea:focus,
+.rating-container input:focus {
+    color: #000;
+}
+div.rate {
+    margin-left: 35px;
+    padding: 5px;
+}
+/* Star Rating CSS End */
+/* Pagination Extra CSS Start */
+.pagination>li>a,
+.pagination>li>span {
+    color: #700203;
+}
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    background-color: #700203;
+    border-color: #700203;
+}
+.fitContent {
+    width: fit-content;
+    margin-left: 7px;
+}
+/* Pagination Extra CSS End */
+
+span small a,
+table tr td a {
+    align-items: center;
+    display: inline;
+    color: #ff9999;
+}
+
+table th {
+    background-color: darkred;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+textarea {
+    background-color: #fbd0d0;
+}
+
+input[type=button] {
+    background-color: #fe1a00;
+    width: 49%;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=number]:hover,
+textarea {
+    /* border-color: #610000; */
+    border: 1px solid #610000;
+    /* background-color: blue; */
+}
+
+input[type=button] {
+	background-color: #fe1a00;
+	width: 49%;
+	cursor: pointer;
+	color: whitesmoke;
+}
+#intextbox{
+	margin-left: 32%;
+}
+@media screen and (max-width: 768px) {
+	#intextbox {
+		margin-left: auto;
+	}
+}
+#cities {
+	margin: 0px 0px 5px 8%;
+	font-size: 16px;
+	color: lightslategrey;
+}
+
+
+    @media screen and (max-width: 768px) {
+        #intextbox {
+            margin-left: auto;
+        }
+    }
+
+    @media screen and (max-width: 768px) and (min-width:320px) {
+        ul .pagination {
+            overflow: hidden;
+            min-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            align-content: center;
+        }
+    }
+
+    .fitContent {
+        width: fit-content;
+        margin-left: 7px;
+    }
+
+    span small a,
+    table tr td a {
+        align-items: center;
+        display: inline;
+        color: #ff9999;
+		font-size: 16px;
+    }
+
+    table th {
+        background-color: darkred;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    input[type=button] {
+        background-color: #fe1a00;
+        width: 49%;
+        cursor: pointer;
+        color: whitesmoke;
+    }

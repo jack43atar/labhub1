@@ -1,0 +1,269 @@
+.store {
+    background-color: #f8f8f8;
+}
+.store_area .dropdown-menu {
+    border-radius: 0 10px 10px 10px;
+    margin-top: 44px;
+   padding: 26px;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.16);
+    background-color: #f8f8f8;
+    border: none;
+}
+.store_area .dropdown-menu a {
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    color: #1a1a1a;
+}
+.store_area .dropdown-menu a:nth-child(1) {
+    margin-bottom: 21px;
+    display: block;
+}
+.dropdown-toggle::after {
+    content: none;
+}
+.store .second_menu {
+    justify-content: flex-end;
+}
+.store_area {
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.16);
+    padding: 66px 100px 0;
+}
+.store_area .navbar {
+    padding: 0;
+}
+.mobile_menu {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #8A8A8A;
+    width: 880px;
+    padding-bottom: 13px;
+}
+.mobile_menu a, .phones_menu a {
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    color: #8a8a8a;
+}
+.phones_menu a {
+    margin-right: 44px;
+}
+.phone_area {
+    padding-left: 138px;
+}
+.phones_menu {
+    display: flex;
+    padding-top: 19px;
+
+}
+.store .business_signup {
+    margin-bottom: 0;
+}
+
+.container_brands input[type=checkbox]:checked + span{
+    color: #9b0405;
+   padding-left: 14px;
+}
+.container_brands input[type=checkbox] {
+    display: none;
+}
+.container_brands .checkmarks:after {
+    left: 0;
+    top: 5px;
+    width: 5px;
+    position: absolute;
+    height: 10px;
+    border: solid #9b0405;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.checkmarks:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+.container_brands input:checked ~ .checkmarks:after {
+    display: block;
+}
+.container_brands {
+    position: relative;
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    color: #1a1a1a;
+    margin-top: 20px;
+}
+.brands h2 {
+    font-family: "segoe-ui-bold";
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.33;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+.phons_brands {
+    display: flex;
+    margin-top: 95px;
+}
+label {
+    margin: 0;
+}
+.brands {
+    margin-bottom: 54px;
+}
+.phone_box {
+    margin: 0 23px 57px;
+    width: 377px;
+    padding: 43px 0 43px 27px;
+    border-radius: 14px;
+    background-color: #ffffff;
+}
+.phone_right {
+    clip-path: polygon(100% 0%, 100% 49%, 100% 100%, 0 100%, 16% 52%, 0 0);
+    width: 97px;
+    height: 39.9px;
+    background-color: #9b0405;
+    text-align: end;
+    padding-right: 20px;
+    padding-top: 6px;
+    margin-bottom: 14px;
+}
+.phone_box_area {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 43px;
+}
+.phone_footer {
+    display: flex;
+    padding-right: 27px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer_left p {
+    font-family: "Segoe UI Semibold";
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.33;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+.phne_brands {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 0 110px;
+    width: 90%;
+}
+.checked_phone {
+    background-color: #8a8a8a;
+}
+.brands_area {
+    width: 10%;
+}
+.phone_box:hover {
+    box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.16);
+}
+.footer_right {
+    display: none;
+}
+.phone_box:hover .footer_right {
+    display: flex;
+}
+.images {
+    display: flex;
+}
+.sac span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 6px;
+    background-color: #9b0405;
+    position: absolute;
+    border-radius: 50%;
+    top: 14px;
+    left: 14px;
+    font-size: 10px;
+    color: #fff;
+}
+.sac {
+    position: relative;
+    margin-left: 19px;
+}
+.footer_right img {
+    cursor: pointer;
+}
+.footer_right .hearts, .footer_right .hearts_red {
+    margin-right: 11px;
+}
+.hearts_red {
+    display: none;
+}
+.mobile_menu .active2 a, .phones_menu .active2 a {
+    font-family: "segoe-ui-bold";
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+@media (max-width: 1700px) {
+    .phne_brands {
+        padding: 0;
+        justify-content: center;
+    }
+}
+@media (max-width: 1400px) {
+    .store_area {
+        padding: 66px 20px 0;
+    }
+    .phone_area {
+        padding-left: 30px;
+    }
+}
+@media (max-width: 1200px) {
+    .mobile_menu {
+        width: 95%;
+        margin-top: 24px;
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+    .mobile_menu a, .phones_menu a {
+        margin-right: 30px;
+        margin-bottom: 5px;
+        display: block;
+    }
+}
+@media (max-width: 1105px) {
+    .phone_box {
+        margin: 0 14px 57px;
+    }
+}
+@media (max-width: 929px) {
+    .brands_area {
+        width: 20%;
+    }
+    .phne_brands {
+        width: 80%;
+    }
+    .phones_menu {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 525px) {
+    .phone_area {
+        padding-left: 15px;
+    }
+    .brands h2, .container_brands {
+        font-size: 14px;
+    }
+    .phone_left img {
+        width: 97%;
+    }
+    .phone_box {
+        width: 90%;
+    }
+}

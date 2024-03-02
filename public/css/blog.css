@@ -1,0 +1,266 @@
+body {
+    background-color: #F8F8F8;
+}
+
+#blog .company_footer {
+    margin: 0
+}
+
+.blog_section {
+    width: 1539px;
+    display: flex;
+    margin: auto;
+    padding-bottom: 240px;
+}
+
+
+.left_banner {
+    width: 600px;
+    float: left;
+    box-sizing: content-box;
+    margin-top: 60px;
+}
+
+.left_banner > div:first-child {
+    display: block;
+    width: 600px;
+    margin-bottom: 34px;
+}
+
+#blog .red_border {
+    width: 600px;
+    height: 2px;
+    display: inline-block;
+    background-color: #9B0405;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#blog .red_border_b {
+    width: 600px;
+    height: 2px;
+    display: inline-block;
+    background-color: #9B0405;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+.head_name {
+    max-width: 78px;
+    display: inline-block;
+    float: left;
+    margin-bottom: 34px;
+}
+
+.head_name > h1 {
+    font-size: 38px;
+    color: #1A1A1A;
+    font-family: "Segoe UI Semibold";
+}
+
+.person_name {
+    float: right;
+    width: 153px;
+}
+
+.person_name > p {
+    height: 23px;
+    font-size: 24px;
+    line-height: 50px;
+    color: #9B0405;
+    font-family: "Segoe UI Semibold";
+
+}
+
+.supporter {
+    display: inline-block;
+    width: 100%;
+}
+
+#blog .supporter {
+    display: inline-block;
+    width: 100%;
+    overflow: scroll;
+    max-height: 1240px;
+
+}
+
+#blog .supporter::-webkit-scrollbar {
+    display: none;
+}
+
+.supporter .banner {
+    width: 600px;
+    padding: 27px;
+    border-bottom: 1.5px solid #8A8A8A;
+    background-color: #fff;
+    position: relative;
+}
+
+.supporter_date {
+
+}
+
+.supporter_date p {
+    color: #9B0405;
+    font-size: 18px;
+}
+
+.supporter_head_text {
+    width: 401px;
+    padding: 27px 0;
+}
+
+.supporter_head_text h2 {
+    font-size: 24px;
+    color: #1A1A1A;
+    font-family: "segoe-ui-bold";
+}
+
+.supporter_text {
+
+}
+
+.supporter_text p {
+    font-size: 18px;
+    color: #1A1A1A;
+}
+
+#blog .banner.active {
+    background-color: #ECECEC;
+}
+
+/* /left_banner */
+
+
+.right_banner {
+    width: 785px;
+    float: right;
+    margin: 174px 0 0 127px;
+
+}
+
+.blog_section .warrior-project {
+    margin-bottom: 36px;
+}
+
+.blog_section .warrior-project h2 {
+    color: #1A1A1A;
+    font-size: 24px;
+    font-family: "segoe-ui-bold";
+
+}
+
+.blog_section .img_banner {
+
+}
+
+.blog_section .img_banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.blog_section .written_bar {
+    margin: 36px 0;
+
+}
+
+.blog_section .written_bar p {
+    font-family: "Segoe UI Semibold";
+    font-size: 18px;
+    color: #1A1A1A;
+}
+
+#blog .written_bar a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.blog_section .writ_by {
+    color: #1A1A1A;
+    font-family: "segoe-ui-bold";
+    font-size: 18px;
+    display: block;
+}
+
+.blog_section .author {
+    color: #9B0405;
+    margin-left: 22px;
+    display: inline;
+    text-decoration: underline;
+}
+
+@media (max-width: 1500px) {
+    .blog_section {
+        width: 1100px;
+        padding-bottom: 150px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .blog_section {
+        width: 920px;
+    }
+
+    .right_banner {
+        margin: 174px 0 0 30px;
+    }
+
+    #blog .blog_section .warrior-project h2, .supporter_head_text h2 {
+        font-size: 20px;
+    }
+
+    #blog .banner {
+        width: 100%;
+    }
+
+    #blog .left_banner, #blog .right_banner {
+        width: 50%;
+    }
+
+    .left_banner > div:first-child {
+        display: block;
+        width: 100%;
+    }
+
+    #blog .supporter {
+        max-height: 1320px;
+    }
+}
+
+@media (max-width: 992px) {
+    .blog_section {
+        width: 100%;
+        padding: 0 10px 100px;
+    }
+
+    #blog .supporter {
+        max-height: 1400px;
+    }
+
+    #blog .blog_section {
+        display: inline-block;
+    }
+
+    #blog .left_banner, #blog .right_banner {
+        width: 100%;
+    }
+
+    #blog .red_border, #blog .red_border_b {
+        width: 100%;
+    }
+
+    #blog .right_banner {
+        margin: 70px 0 0 30px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    #blog .right_banner {
+        margin: 30px 0 0 30px;
+    }
+}

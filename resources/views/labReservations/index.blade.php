@@ -151,6 +151,9 @@ $currencies = [
 </div>
 @endsection
 @section('js')
+<script> 
+var startTmp='';
+</script>
 <script src="{{asset('js/datePicker.js')}}"></script>
 <script src="{{asset('js/lab-reservation.js')}}"></script>
 @endsection

@@ -1,6 +1,7 @@
 $(document).ready(function () {
     let currentSum;
     let dif;
+
     let daySelect;
     var currency = $(".active-lab-type .lab_type_price span").text();
     var picker = new Lightpick({
@@ -8,21 +9,34 @@ $(document).ready(function () {
         singleDate: false,
 
         onSelect: function (start, end) {
+            // console.log(startTmp);
+
             let startDate = "";
             let endDate = "";
+            startDate += start ? start.format("MM/DD/YYYY") : "";
+            endDate += end ? end.format("MM/DD/YYYY") : "";
+            //DD/MM/YYYY
+            if (startTmp != startDate) {
+                startTmp = startDate;
+                endDate = startTmp;
+            }
 
-            startDate += start ? start.format("DD/MM/YYYY") : "";
-            endDate += end ? end.format("DD/MM/YYYY") : "";
+            if (endDate < startDate) {
+                let tmp = startDate;
+                startDate = endDate;
+                endDate = tmp;
+                startTmp = startDate;
+            }
 
             let start1Date = startDate.split("/");
             let end1Date = endDate.split("/");
 
             let startYear = parseInt(start1Date[2]);
-            let startMonth = parseInt(start1Date[1]);
-            let startDay = parseInt(start1Date[0]);
+            let startMonth = parseInt(start1Date[0]);
+            let startDay = parseInt(start1Date[1]);
             let endYear = parseInt(end1Date[2]);
-            let endMonth = parseInt(end1Date[1]);
-            let endDay = parseInt(end1Date[0]);
+            let endMonth = parseInt(end1Date[0]);
+            let endDay = parseInt(end1Date[1]);
 
             let start2Date = new Date(startYear, startMonth, startDay);
             let end2Date = new Date(endYear, endMonth, endDay);
@@ -35,7 +49,7 @@ $(document).ready(function () {
             );
 
             dif = endDateDays - startDateDays;
-
+            if (dif == 0) dif = 1;
             document.getElementById("daysCount").value = dif;
             if (startDate && endDate) {
                 document.getElementById("start_date").innerHTML = startDate;
@@ -44,6 +58,7 @@ $(document).ready(function () {
             //your_total-price
 
             if (dif >= 0) {
+                // console.log(currentSum, dif);
                 if (currentSum) {
                     var totalCount = currentSum * dif;
                     daySelect = $("#full-and-part_select").val();

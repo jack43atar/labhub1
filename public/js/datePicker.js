@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    let opt_val = $("#step-one-select-country")[0].value;
+    if (opt_val != "") {
+        $(".lab_type").fadeOut(0);
+        $(".lab_type." + opt_val).fadeIn(300);
+    }
+
     let currentSum;
     let dif;
 
@@ -9,8 +15,6 @@ $(document).ready(function () {
         singleDate: false,
 
         onSelect: function (start, end) {
-            // console.log(startTmp);
-
             let startDate = "";
             let endDate = "";
             startDate += start ? start.format("MM/DD/YYYY") : "";
@@ -38,8 +42,8 @@ $(document).ready(function () {
             let endMonth = parseInt(end1Date[0]);
             let endDay = parseInt(end1Date[1]);
 
-            let start2Date = new Date(startYear, startMonth, startDay);
-            let end2Date = new Date(endYear, endMonth, endDay);
+            let start2Date = new Date(startYear, startMonth - 1, startDay);
+            let end2Date = new Date(endYear, endMonth - 1, endDay);
 
             let startDateDays = Math.ceil(
                 start2Date.getTime() / (1000 * 60 * 60 * 24)
@@ -47,9 +51,13 @@ $(document).ready(function () {
             let endDateDays = Math.ceil(
                 end2Date.getTime() / (1000 * 60 * 60 * 24)
             );
-
-            dif = endDateDays - startDateDays;
-            if (dif == 0) dif = 1;
+            let sss = Math.ceil(
+                Math.round(
+                    (end2Date.getTime() - start2Date.getTime()) /
+                        (1000 * 60 * 60 * 24)
+                )
+            );
+            dif = endDateDays - startDateDays + 1;
             document.getElementById("daysCount").value = dif;
             if (startDate && endDate) {
                 document.getElementById("start_date").innerHTML = startDate;
@@ -58,7 +66,6 @@ $(document).ready(function () {
             //your_total-price
 
             if (dif >= 0) {
-                // console.log(currentSum, dif);
                 if (currentSum) {
                     var totalCount = currentSum * dif;
                     daySelect = $("#full-and-part_select").val();

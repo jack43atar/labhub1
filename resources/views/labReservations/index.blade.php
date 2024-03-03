@@ -58,15 +58,9 @@ $currencies = [
                 <div class="choose_box">
                     <h2>Choose the location</h2>
                     <select id="step-one-select-country" class="research angle-down filter_category" name="country">
-                        <option value="lab_type-usa">USA</option>
-                        <option value="lab_type-canada">Canada</option>
-                        <option value="lab_type-germany">Germany</option>
-                        <option value="lab_type-china">China</option>
-						<option value="lab_type-taiwan">Taiwan</option>
-                        <option value="lab_type-austrailia">Austrailia</option>
-                        <option value="lab_type-uk">United Kingdom</option>
-						
-						
+                        @foreach($country as $key=>$cty)
+                        <option class="option_lab_type" value="lab_type-{{str_replace(' ', '', $cty->country)}}">{{$cty->country}}</option>
+                        @endforeach
                     </select>
                     <h2>Select your booking dates</h2>
                     <input type="text" id="datepicker" />
@@ -81,7 +75,7 @@ $currencies = [
                 <div class="choose_box">
                     <h2>Choose the lab type</h2>
                     @foreach($lab_types->groupBy('country') as $key => $values)
-                    <div class="lab_type lab_type-{{$key}}">
+                    <div class="lab_type lab_type-{{str_replace(' ', '', $key)}}">
                         @foreach($values as $lab_type)
                         <div class="lab_type_box">
                             <div class="lab_type_name">

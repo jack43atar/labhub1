@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <meta name="description" content="">
     <meta name="author" content="">
     <title>business login</title>
@@ -67,25 +68,28 @@
                 <div class="forget_your_password" id="forget">
                     <img src="images/user1.svg">
                     <h1> Forgot your password ?</h1>
-                    <form class="login_inputs_1">
+                    <div class="login_inputs_1">
                         <p>Enter your e-mail address and we’ll<br/>
                             send you a link to reset your password</p>
-                        <input type="email" placeholder="Enter Your Email Address">
+                        <input type="email" placeholder="Enter Your Email Address" id="reset_email">
                         <div class="reset_area">
                             <button class="cancel">CANCEL</button>
-                            <button class="reset" type="button">RESET</button>
+                            <button class="reset" type="button" id="hidden_reset_email">RESET</button>
                         </div>
 
-                    </form>
+                    </div>
                 </div>
                 <div class="reset_your_password" id="reset">
                     <img src="images/user.svg">
                     <h1>Reset your password</h1>
-                    <form class="login_inputs reset_inputs">
-                        <input type="password" placeholder="Password" class="password_icon">
+                    <form class="login_inputs reset_inputs" method="POST" action="{{ route('resetPwd') }}" id="reset-submit-form">
+                        @csrf
+                        <input type="hidden" name="type" value="3">
+                        <input type="hidden" name="email" id="hidden_email">
+                        <input type="password" placeholder="Password" class="password_icon" name="password" id='reset-password'>
                         <p>The password must be between 8 and 20 characters</p>
-                        <input type="password" placeholder="Retype Password" class="password_icon">
-                        <button >SAVE</button>
+                        <input type="password" placeholder="Retype Password" class="password_icon" name="password_confirmation" id='reset-confirm-password'>
+                        <input type="button" class="custom-reset-btn" id="reset_pwd_business" value="Save"></button>
                     </form>
                 </div>
             </div>

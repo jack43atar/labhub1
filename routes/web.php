@@ -26,6 +26,7 @@ Route::get('/login-user',           'LoginRegisterController@index')->name('user
 Route::get('/login-business',       'LoginRegisterController@indexBusiness')->name('businessLogin');
 Route::get('/logout',               'LoginRegisterController@logout');
 Route::post('/login',               'LoginRegisterController@login')->name('login');
+Route::post('/reset-pwd',               'LoginRegisterController@reset')->name('resetPwd');
 Route::post('/register',            'LoginRegisterController@register')->name('register');
 //business auth
 //Route::post('/login-business',       ['as'=>'login_business','uses'=>'BusinessController@login'])->name('login_business');

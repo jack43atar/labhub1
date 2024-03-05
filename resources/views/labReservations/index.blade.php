@@ -80,6 +80,7 @@ $currencies = [
                         <div class="lab_type_box">
                             <div class="lab_type_name">
                                 <h3 class="lab_type_str" name="lab_name" data-lab-type-id="{{$lab_type->id}}">{{$lab_type->lab_name}}</h3>
+                                <p>{{$lab_type->address.", ".$lab_type->city.", ".$lab_type->country}}</p>
                                 <p>{{$lab_type->test_site}}</p>
                             </div>
                             <div class="lab_type_price">

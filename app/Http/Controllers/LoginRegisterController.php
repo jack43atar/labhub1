@@ -23,6 +23,7 @@ class LoginRegisterController extends Controller
     }
     public function login(LoginRequest $request)
     {
+        
         if ($request['type'] == User::TYPES['user']) {
             if (Auth::attempt([
                 'type'      => User::TYPES['user'],
@@ -32,7 +33,7 @@ class LoginRegisterController extends Controller
             {
                 return redirect()->route('home');
             }
-
+            // print_r("wrong");die();
             return redirect()->back()->with('message', 'email or password do not match.');
         }
         elseif ($request['type'] == User::TYPES['business'])  {
@@ -81,7 +82,30 @@ class LoginRegisterController extends Controller
         }
 
     }
+    public function reset(Request $request)
+    {
 
+        $data= $request->all();
+
+        $data['password'] = Hash::make($data['password']);
+
+        if($data['type'] == User::TYPES['business']) {
+
+            $user = User::where('email', $data['email'])
+                ->where('type', $data['type'])
+                ->update(['password' => $data['password']]);
+            return view('loginBusiness')->with('email', $data['email']);
+        }
+        else {
+
+            $user = User::where('email', $data['email'])
+                ->where('type', $data['type'])
+                ->update(['password' => $data['password']]);
+
+            return view('login')->with('email', $data['email']);
+        }
+
+    }
     public function logout() {
         auth()->logout();
 

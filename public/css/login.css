@@ -1,4 +1,3 @@
-  
 @font-face {
     font-family: "segoe-ui-bold";
     src: url("../fonts/segoe-ui-bold.ttf");
@@ -22,6 +21,15 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.custom-reset-btn {
+    background: none !important;
+    border-radius: 32px !important;
+    background-color: #700203 !important;
+    opacity: 1 !important;
+    color: white !important;
+    cursor: pointer !important;
+    margin-top: 15px !important;
 }
 button {
     cursor: pointer;
@@ -62,14 +70,14 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-	cursor: pointer;
+    cursor: pointer;
 }
 .login_buttons .active {
     background-color: #700203;
     color: #ffffff;
     border: none;
     margin-bottom: 14px;
-	cursor: pointer;
+    cursor: pointer;
 }
 .login_buttons li {
     border: solid 1px #700203;
@@ -130,12 +138,14 @@ button {
     height: 100%;
     object-fit: contain;
 }
-.login_inputs, .login_inputs_1 {
+.login_inputs,
+.login_inputs_1 {
     display: flex;
     flex-direction: column;
     width: 474px;
 }
-.login_inputs input, .sign_up input {
+.login_inputs input,
+.sign_up input {
     height: 63px;
     opacity: 0.5;
     border-radius: 14px;
@@ -151,7 +161,7 @@ button {
     padding-left: 20px;
 }
 .login_inputs input:nth-child(2) {
-    background: url("../images/view.svg")97% no-repeat;
+    background: url("../images/view.svg") 97% no-repeat;
 }
 /* The container */
 .container_check {
@@ -219,7 +229,8 @@ button {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-.box_middle h2, #password2 h1 {
+.box_middle h2,
+#password2 h1 {
     font-family: "Segoe UI Semibold";
     font-size: 27px;
     font-weight: 600;
@@ -237,7 +248,8 @@ button {
     line-height: 1.33;
     color: #700203;
 }
-.login_inputs button, .sign_up button {
+.login_inputs button,
+.sign_up button {
     height: 63px;
     border-radius: 32px;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
@@ -258,10 +270,12 @@ button {
 .password_area1 {
     display: none;
 }
-.forget_your_password, .reset_your_password {
+.forget_your_password,
+.reset_your_password {
     display: none;
 }
-#forget h1, #reset h1 {
+#forget h1,
+#reset h1 {
     font-family: "Segoe UI Semibold";
     font-size: 27px;
     font-weight: 600;
@@ -324,7 +338,8 @@ button {
 .reset_inputs {
     margin-top: 27px;
 }
-.reset_inputs p, .sign_up p {
+.reset_inputs p,
+.sign_up p {
     font-family: "Segoe UI Semibold";
     font-size: 15px;
     font-weight: 600;
@@ -332,9 +347,10 @@ button {
     color: #58595b;
     margin-bottom: 17px;
 }
-.reset_inputs input, .password_icon {
+.reset_inputs input,
+.password_icon {
     margin-bottom: 6px;
-    background: url("../images/view.svg")97% no-repeat;
+    background: url("../images/view.svg") 97% no-repeat;
 }
 .sign_up {
     display: flex;
@@ -358,17 +374,21 @@ button {
     }
 }
 @media (max-width: 1200px) {
-    .login_inputs, .login_inputs_1, .sign_up {
+    .login_inputs,
+    .login_inputs_1,
+    .sign_up {
         width: 100%;
     }
-    .box_middle, #forget, #password2 {
+    .box_middle,
+    #forget,
+    #password2 {
         width: 90%;
     }
     .login_buttons {
         position: absolute;
         top: 0;
         width: unset;
-      right: 0;
+        right: 0;
         margin: 0 20px;
         flex-direction: unset;
     }
@@ -412,7 +432,10 @@ button {
     .login_area {
         flex-direction: column;
     }
-    .welcome, .box_middle_second, .forget_your_password, #reset {
+    .welcome,
+    .box_middle_second,
+    .forget_your_password,
+    #reset {
         width: 90%;
         margin: 0 auto;
     }

@@ -81,7 +81,7 @@ class LabReservationController extends Controller
         $data = [
             'start_date'     => $start_date->format('Y-m-d'),
             'end_date'       => $end_date->format('Y-m-d'),
-            'diff_days'      => $start_date->diffInDays(($end_date)),
+            'diff_days'      => $start_date->diffInDays(($end_date))+1,
             'full_or_part'   => $request['full_or_part'],
             'lab_type_name'  => $lab_type->lab_name,
             'currency'       => LabType::CURRENCIES_FOR_VIEW[$lab_type->currency],
@@ -97,12 +97,12 @@ class LabReservationController extends Controller
         }
 
         $request->session()->put('stepOneData', $data);
-
         return 'success';
     }
 
     public function labReservationAllFormWithPayment(labReservationAllFormWithPaymentRequest $request)
     {
+        
         \Stripe\Stripe::setApiKey('sk_test_RXsw1LH4DYyLVwoCHJMWLldY0009Iebsdf');
         $token = $_POST['stripeToken'];
 
@@ -132,7 +132,7 @@ class LabReservationController extends Controller
             'service_preferences'   => $service_preferences,
             'product_descriptions'  => $product_descriptions,
         ]);
-
+        
         return view('site.lab_reservation.lab_reservation_step_three', compact('data'));
 
 

@@ -53,6 +53,13 @@
                             <a href="#" class="forget_password">Forgot Password ?</a>
                         </div>
                         <button type="submit">Sign In</button>
+                        <div class="block mt-4">
+                            <div class="flex items-center justify-end mt-4">
+                                <a href="{{ url('login/google') }}">
+                                    <img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png">
+                                </a>
+                            </div>
+                        </div>
                     </form>
                 </div>
                 <div class="password_area1" id="password2">
@@ -68,7 +75,7 @@
                         <input type="password" placeholder="Retype Password" class="password_icon" name="password_confirmation">
                         <div class="forget">
                             <div class="check_login">
-                                <label class="container_check">I have accepted the <a href="#"> Term and Conditions</a>
+                                <label class="container_check">I have accepted the <a href="https://www.telcron.net/terms/" target="_blank"> Term and Conditions</a>
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>
@@ -107,6 +114,8 @@
                         <p>The password must be between 8 and 20 characters</p>
                         <input type="password" placeholder="Retype Password" class="password_icon" name="password_confirmation" id='reset-confirm-password'>
                         <input type="button" class="custom-reset-btn" id="reset_pwd" value="Save"></button>
+                      
+
                     </form>
                 </div>
             </div>

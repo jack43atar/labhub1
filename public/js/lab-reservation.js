@@ -341,7 +341,7 @@ $("body")
             // AJAX
             $.ajax({
                 method: "POST",
-                url: domain + "/lab-reservation/booking/step-one-ajax",
+                url: "/lab-reservation/booking/step-one-ajax",
                 headers: {
                     "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr(
                         "content"
@@ -357,8 +357,7 @@ $("body")
             }).done(function (response) {
                 if (response === "success") {
                     // console.log(123);
-                    location.href =
-                        domain + "/lab-reservation/booking/step-two";
+                    location.href = "/lab-reservation/booking/step-two";
                 }
             });
         }
@@ -373,7 +372,7 @@ $("body")
         $("#step-three-payment-btn").css("opacity", "0.6");
         var asd = $.ajax({
             method: "POST",
-            url: domain + "/lab-reservation/booking/payment",
+            url: "/lab-reservation/booking/payment",
             headers: {
                 "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
             },

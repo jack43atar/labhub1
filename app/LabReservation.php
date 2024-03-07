@@ -44,19 +44,38 @@ class LabReservation extends Model
    ];
 
     public const COUNTRIES = [
-        'lab_type-usa' => 'USA',
-        'lab_type-canada' => 'Canada',
-        'lab_type-germany' => 'Germany',
-        'lab_type-china' => 'China',
+        'lab_type-Australia' => 'Australia',
+        'lab_type-Canada' =>'Canada',
+        'lab_type-China'=>'China',
+        'lab_type-France'=>'France',
+        'lab_type-Germany'=>'Germany',
+        'lab_type-India'=>'India',
+        'lab_type-Italy'=>'Italy',
+        'lab_type-NewZealand'=>'New Zealand',
+        'lab_type-Taiwan'=>'Taiwan',
+        'lab_type-UnitedKindom'=>'United Kingdom',
+        'lab_type-UnitedStates'=>'United States',
+        'lab_type-Japan'=>'Japan',
+        'lab_type-SouthKorea'=>'South Korea'
 //        'lab_type-japan' => 'Japan',
 //        'lab_type-australia' => 'Australia/New Zealand',
    ];
 
     public const KEY_COUNTRIES = [
-        'lab_type-usa',
-        'lab_type-canada',
-        'lab_type-germany',
-        'lab_type-china',
+        'lab_type-Australia',
+        'lab_type-Canada',
+        'lab_type-China',
+        'lab_type-France',
+        'lab_type-Germany',
+        'lab_type-India',
+        'lab_type-Italy',
+        'lab_type-NewZealand',
+        'lab_type-Taiwan',
+        'lab_type-UnitedKindom',
+        'lab_type-UnitedStates',
+        'lab_type-Japan',
+        'lab_type-SouthKorea'
+
 //        'lab_type-japan' => 'Japan',
 //        'lab_type-australia' => 'Australia/New Zealand',
     ];

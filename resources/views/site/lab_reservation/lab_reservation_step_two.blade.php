@@ -60,8 +60,8 @@
                     <div class="company_information">
                         <h2>A. Company information</h2>
                         <div class="inputs_line">
-                            <input type="text" name="company_name" placeholder="{{$user->business->company_name}}"
-                                   disabled>
+                            <input type="text" name="company_name" placeholder="<?php if(isset($user->business)) echo $user->business->company_name ?>"
+                                   >
                             <input type="email" placeholder="{{$user->email}}" disabled>
                             <input type="text" name="company_contact_f_name" placeholder="Company contact's first name">
                             <input type="text" name="company_contact_l_name" placeholder="Company contact's Last Name">

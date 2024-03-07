@@ -22,6 +22,11 @@ Route::get('/', 'IndexController@index')->name('home');
 
 // login, logout, register
 
+// GoogleLoginController redirect and callback urls
+Route::get('/login/google', 'GoogleLoginController@redirectToGoogle')->name('auth.google');
+Route::get('/login/google/callback', 'GoogleLoginController@handleGoogleCallback');
+
+
 Route::get('/login-user',           'LoginRegisterController@index')->name('userLogin');;
 Route::get('/login-business',       'LoginRegisterController@indexBusiness')->name('businessLogin');
 Route::get('/logout',               'LoginRegisterController@logout');

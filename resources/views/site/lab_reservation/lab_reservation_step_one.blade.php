@@ -73,9 +73,9 @@ $currencies = [
                     <input type="text" id="datepicker"/>
 
                     <select class="research research_time angle-down" id="full-and-part_select">
-                        <option value="1">8 am to 5 pm,</option>
-                        <option value="2">8 am to 12:30 pm</option>
-                        <option value="3">12:30 pm to 5 pm</option>
+                        <option value="1">8 AM to 5 PM,</option>
+                        <option value="2">8 AM to 12:30 PM</option>
+                        <option value="3">12:30 PM to 5 PM</option>
                     </select>
                     <input type="hidden" id="daysCount" name="daysCount" value="0"/>
                     <h2 class="calend_m">Select your booking dates</h2>

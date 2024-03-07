@@ -56,7 +56,7 @@
                         <input type="password" placeholder="Retype Password" class="password_icon" name="password_confirmation">
                         <div class="forget">
                             <div class="check_login">
-                                <label class="container_check">I have accepted the <a href="#"> Term and Conditions</a>
+                                <label class="container_check">I have accepted the <a href="https://www.telcron.net/terms/" target="_blank"> Term and Conditions</a>
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>

@@ -1,8 +1,8 @@
 <?php
 $currencies = [
-    1 => 'usd',
-    2 => 'euro',
-    3 => 'rmb',
+    1 => '$',
+    2 => '€',
+    3 => '¥',
 ]
 ?>
 @extends('layouts.app')
@@ -65,9 +65,9 @@ $currencies = [
                     <h2>Select your booking dates</h2>
                     <input type="text" id="datepicker" />
                     <select class="research research_time angle-down" name="time" id="full-and-part_select">
-                        <option value="1">8 Am to 5 Pm.</option>
-                        <option value="2">8 Am to 12:30 Pm</option>
-                        <option value="3">12:30 Pm to 5 Pm</option>
+                        <option value="1">8 AM to 5 PM.</option>
+                        <option value="2">8 AM to 12:30 PM</option>
+                        <option value="3">12:30 PM to 5 PM</option>
                     </select>
                     <input type="hidden" id="daysCount" name="daysCount" value="0" />
                     <h2 class="calend_m">Select your booking dates</h2>

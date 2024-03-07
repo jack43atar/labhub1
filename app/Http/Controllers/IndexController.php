@@ -10,9 +10,9 @@ class IndexController extends Controller
     public function index()
     {
   
-        // $filename = "australia.csv";
+        // $filename = "japan.csv";
         // // In case the uploaded file path is to be stored in the database 
-        // $filepath = public_path("csvs/" . $filename);
+        // $filepath = public_path("csv/" . $filename);
         // // Reading file
         // $file = fopen($filepath, "r");
         // $importData_arr = array(); // Read through the file and store the contents as an array

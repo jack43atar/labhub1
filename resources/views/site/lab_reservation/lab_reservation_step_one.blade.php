@@ -59,12 +59,17 @@ $currencies = [
             <div class="choose_area">
                 <div class="choose_box">
                     <h2>Choose the location</h2>
-                    <select id="step-one-select-country" class="research angle-down filter_category" name="country">
+                    <!-- <select id="step-one-select-country" class="research angle-down filter_category" name="country">
                         <option value="" selected disabled hidden>Choose the country</option>
                         <option value="lab_type-usa">USA</option>
                         <option value="lab_type-canada">Canada</option>
                         <option value="lab_type-germany">Germany</option>
                         <option value="lab_type-china" selected>China</option>
+                    </select> -->
+                    <select id="step-one-select-country" class="research angle-down filter_category" name="country">
+                        @foreach($country as $key=>$cty)
+                        <option class="option_lab_type" value="lab_type-{{str_replace(' ', '', $cty->country)}}">{{$cty->country}}</option>
+                        @endforeach
                     </select>
                     <h2>Select your booking dates</h2>
 
@@ -154,6 +159,9 @@ $currencies = [
 
 
 @section('js')
+    <script>    
+        var startTmp='';
+    </script>
     <script src="{{asset('js/datePicker.js')}}"></script>
     <script src="{{asset('js/lab-reservation.js')}}"></script>
 

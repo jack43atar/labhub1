@@ -36,22 +36,25 @@
         </div>
         <div class="home_page">
             <div class="reserv_lab">
-				<div class="reserv_lab_box">
-					<img src="images/lab.svg">
-					<a href="{{route('book_lab')}}">
-						<p>Reserve Lab for<br />
-							Precertification Testing
-						</p>
-					</a>
-				</div>
-                <div class="reserv_lab_box">
-                    <img src="images/submit.svg">
-                    <a href="{{route('submitrfq')}}">
-						<p>Submit RFQ for<br />
-							Certification Test
-						</p>
-                	</a>
-                </div>
+                <a href="{{route('book_lab')}}" class="reserv_lab_box">
+                    <div>
+                        <img src="images/lab.svg">
+                        
+                            <p>Reserve Lab for<br />
+                                Precertification Testing
+                            </p>
+                    </div>
+                </a>
+                <a href="{{route('submitrfq')}}" class="reserv_lab_box">
+                    <div>
+                        <img src="images/submit.svg">
+                        
+                            <p>Submit RFQ for<br />
+                                Certification Test
+                            </p>
+                    </div>
+                </a>
+
                 <form class="contact_form" method="POST" action="{{ route('contactSendMail') }}">
                     @csrf
                     <div class="contact_form_img">
@@ -111,47 +114,68 @@
                 </div>
             </div>
             <div class="scan">
-            <div class="testing_lef_area">
-                <h2>
-                    Use the scan camera for instant,<br>
-                    AI assisted certification status discovery, recall risk and recycling/sustainability grade
-                </h2>
-                <p><b>
-                        This app will let you scan barcode to discover the certification status
-                    </b></p>
-                <p>
-                    The testlabhub app is the ultimate tool to quickly access essential compliance status information for millions of tracked products with just a scan of their barcodes.
-                </p>
-                <p>
-                    With testlabhub, you can effortlessly stay informed about the compliance of various products, ensuring that they meet the necessary regulations and standards. Whether you're a consumer, a retailer, or a regulatory professional, this app is your go-to resource for making informed choices and ensuring product safety.
-                </p>
-                <p><b>Key Features:</b>
-                <ul>
-                    <li class="justify"><b>Barcode Scanning:</b> Simply scan the barcode of any product using your device's camera, and Product Compliance Scanner will rapidly retrieve the pertinent compliance status information. No manual input or extensive searching is required!</li>
-                    <li class="justify"><b>Extensive Database:</b> testlabhub covers an extensive range of products, tracking millions of items from diverse industries. From electronics to cosmetics, household goods to food items, you'll find comprehensive compliance details at your fingertips.</li>
-                    <li class="justify"><b>Compliance Status:</b> Get instant access to essential compliance details, including certifications, safety standards, and regulatory approvals. Identify any potential risks or non-compliance issues, enabling you to make informed decisions about the products you buy or sell.
-                    </li>
-                    <li class="justify"><b>User-Friendly Interface:</b> testlabhub offers a sleek and intuitive interface, making it easy to navigate and obtain the information you need. Enjoy a seamless scanning experience with accurate and real-time results.
-                    </li>
-                </ul>
-                </p>
-                <p class="for_information">For more information, click on this link <a href="https://play.google.com/store/apps/details?id=telcron.app1&pli=1" target="_blank">Testlabhub - Apps on Google Play</a></p>
+                <div class="testing_lef_area">
+                    <h2>
+                        Use the scan camera for instant,<br>
+                        AI assisted certification status discovery, recall risk and recycling/sustainability grade
+                    </h2>
+                    <p><b>
+                            This app will let you scan barcode to discover the certification status
+                        </b></p>
+                    <p>
+                        The testlabhub app is the ultimate tool to quickly access essential compliance status information for millions of tracked products with just a scan of their barcodes.
+                    </p>
+                    <p>
+                        With testlabhub, you can effortlessly stay informed about the compliance of various products, ensuring that they meet the necessary regulations and standards. Whether you're a consumer, a retailer, or a regulatory professional, this app is your go-to resource for making informed choices and ensuring product safety.
+                    </p>
+                    <p><b>Key Features:</b>
+                    <ul>
+                        <li class="justify"><b>Barcode Scanning:</b> Simply scan the barcode of any product using your device's camera, and Product Compliance Scanner will rapidly retrieve the pertinent compliance status information. No manual input or extensive searching is required!</li>
+                        <li class="justify"><b>Extensive Database:</b> testlabhub covers an extensive range of products, tracking millions of items from diverse industries. From electronics to cosmetics, household goods to food items, you'll find comprehensive compliance details at your fingertips.</li>
+                        <li class="justify"><b>Compliance Status:</b> Get instant access to essential compliance details, including certifications, safety standards, and regulatory approvals. Identify any potential risks or non-compliance issues, enabling you to make informed decisions about the products you buy or sell.
+                        </li>
+                        <li class="justify"><b>User-Friendly Interface:</b> testlabhub offers a sleek and intuitive interface, making it easy to navigate and obtain the information you need. Enjoy a seamless scanning experience with accurate and real-time results.
+                        </li>
+                    </ul>
+                    </p>
+                    <p class="for_information">For more information, click on this link <a href="https://play.google.com/store/apps/details?id=telcron.app1&pli=1" target="_blank">Testlabhub - Apps on Google Play</a></p>
+                </div>
+                <div class="scan_img">
+                    <img src="images/scanimg.png">
+                </div>
             </div>
-            <div class="scan_img">
-                <img src="images/scanimg.png">
-            </div>
-        </div>
             <div class="testing">
-            <div class="testing_lef_area">
-                <h2>Discover certification with product iQ via text based search</h2>
-                <p class="iq justify">We enable consumers and businesses to verify market acceptance for millions of products sold in e-commerce and social commerce platforms. Keeping unsafe products away from end users is one of our core missions. </p>
-                <p class="for_information">For more information <a href="https://testlabhub.com/submit-rfq" target="_blank"> click here.</a></p>
-            </div>
-            <div class="scan_img">
-                <img src="images/product.png">
+                <div class="testing_lef_area">
+                    <h2>Discover certification with product iQ via text based search</h2>
+                    <p class="iq justify">We enable consumers and businesses to verify market acceptance for millions of products sold in e-commerce and social commerce platforms. Keeping unsafe products away from end users is one of our core missions. </p>
+                    <p class="for_information">For more information <a href="https://testlabhub.com/submit-rfq" target="_blank"> click here.</a></p>
+                </div>
+                <div class="scan_img">
+                    <img src="images/product.png">
+                </div>
             </div>
         </div>
-        </div>
+ 
+
+        <form class="contact_form upload-form" method="POST" action="{{ route('contactSendMail') }}">
+            @csrf
+            <div class="contact_form_img upload-img">
+                <img src="images/uploading.png">
+                <h2>Image/Video Upload</h2>
+            </div>
+            
+            <!-- <label>Name</label>
+            <input type="text" name="name">
+            <label>Email address</label>
+            <input type="email" name="email">
+            <label>Message</label>
+            <textarea name="message"></textarea> -->
+            <button type="submit">Upload</button>
+            @if(isset($mail_message))
+                <h3>{{$mail_message}}</h3>
+            @endif
+        </form>
+
        <div class="find">
         <h2 class="your_business">Find what fits your business needs</h2>
         <div class="category">

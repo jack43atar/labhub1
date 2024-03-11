@@ -8,7 +8,7 @@
             @include('partials.sign_in_log_out')
         </div>
         <div class="phone_area">
-            <ul class="mobile_menu">
+            <!-- <ul class="mobile_menu">
                 <li class="active2">
                     <a href="#">Mobile Phones</a>
                 </li>
@@ -42,9 +42,9 @@
                 <li>
                     <a href="#">Accessories</a>
                 </li>
-            </ul>
+            </ul> -->
             <div class="phons_brands">
-                <div class="brands_area">
+                <!-- <div class="brands_area">
                     <ul class="brands">
                         <h2>BRANDS</h2>
                         <li>
@@ -111,12 +111,13 @@
                             </label>
                         </li>
                     </ul>
-                </div>
+                </div> -->
                 <div class="phne_brands">
+                    @foreach ($items as $item)
                     <div class="phone_box">
                         <div class="phone_box_area">
                             <div class="phone_left">
-                                <img src="images/phone.png">
+                                <img src="{{$item->photourl}}">
                             </div>
                             <div class="phone_right">
 
@@ -124,15 +125,15 @@
                         </div>
                         <div class="phone_footer">
                             <div class="footer_left">
-                                <p>iPhone 11 Pro Max</p>
-                                <p>$850</p>
-                                <div class="stars">
+                                <p>{{$item->name}}</p>
+                                <p>${{$item->price}}</p>
+                                <!-- <div class="stars">
                                     <img src="images/Starfree1.svg">
                                     <img src="images/Starfree1.svg">
                                     <img src="images/Starfree1.svg">
                                     <img src="images/Starfree.svg">
                                     <img src="images/Starfree.svg">
-                                </div>
+                                </div> -->
                             </div>
                             <div class="footer_right">
                                 <img src="images/hearts.svg" class="hearts">
@@ -143,169 +144,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="phone_box">
-                        <div class="phone_box_area">
-                            <div class="phone_left">
-                                <img src="images/phone.png">
-                            </div>
-                            <div class="phone_right checked_phone">
-                                <img src="images/FCC.svg">
-                            </div>
-                        </div>
-                        <div class="phone_footer">
-                            <div class="footer_left">
-                                <p>iPhone 11 Pro Max</p>
-                                <p>$850</p>
-                                <div class="stars">
-                                    <img src="images/Starfree1.svg">
-                                    <img src="images/Starfree1.svg">
-                                    <img src="images/Starfree1.svg">
-                                    <img src="images/Starfree.svg">
-                                    <img src="images/Starfree.svg">
-                                </div>
-                            </div>
-                            <div class="footer_right">
-                                <img src="images/hearts.svg" class="hearts">
-                                <div class="hearts_red">
-                                    <img src="images/heart.svg">
-                                </div>
-                                <img src="images/sac.svg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="phone_box">
-                        <div class="phone_box_area">
-                            <div class="phone_left">
-                                <img src="images/phone.png">
-                            </div>
-                            <div class="phone_right checked_phone">
-                                <img src="images/FCC.svg">
-                            </div>
-                        </div>
-                        <div class="phone_footer">
-                            <div class="footer_left">
-                                <p>iPhone 11 Pro Max</p>
-                                <p>$850</p>
-                                <div class="stars">
-                                    <img src="images/Starfree1.svg">
-                                    <img src="images/Starfree1.svg">
-                                    <img src="images/Starfree1.svg">
-                                    <img src="images/Starfree.svg">
-                                    <img src="images/Starfree.svg">
-                                </div>
-                            </div>
-                            <div class="footer_right">
-                                <img src="images/hearts.svg" class="hearts">
-                                <div class="hearts_red">
-                                    <img src="images/heart.svg">
-                                </div>
-                                <img src="images/sac.svg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="phone_box">
-                        <div class="phone_box_area">
-                            <div class="phone_left">
-                                <img src="images/phone.png">
-                            </div>
-                            <div>
-                                <div class="phone_right checked_phone">
-                                    <img src="images/FCC.svg">
-                                </div>
-                                <div class="phone_right checked_phone">
-                                    <img src="images/ISO-Standards.svg">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="phone_footer">
-                            <div class="footer_left">
-                                <p>iPhone 11 Pro Max</p>
-                                <p>$850</p>
-                                <div class="stars">
-                                    <img src="images/Starfree1.svg">
-                                    <img src="images/Starfree1.svg">
-                                    <img src="images/Starfree1.svg">
-                                    <img src="images/Starfree.svg">
-                                    <img src="images/Starfree.svg">
-                                </div>
-                            </div>
-                            <div class="footer_right">
-                                <img src="images/hearts.svg" class="hearts">
-                                <div class="hearts_red">
-                                    <img src="images/heart.svg">
-                                </div>
-                                <img src="images/sac.svg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="phone_box">
-                        <div class="phone_box_area">
-                            <div class="phone_left">
-                                <img src="images/phone.png">
-                            </div>
-                            <div>
-                                <div class="phone_right checked_phone">
-                                    <img src="images/FCC.svg">
-                                </div>
-                                <div class="phone_right checked_phone">
-                                    <img src="images/ISO-Standards.svg">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="phone_footer">
-                            <div class="footer_left">
-                                <p>iPhone 11 Pro Max</p>
-                                <p>$850</p>
-                                <div class="stars">
-                                    <img src="images/Starfree1.svg">
-                                    <img src="images/Starfree1.svg">
-                                    <img src="images/Starfree1.svg">
-                                    <img src="images/Starfree.svg">
-                                    <img src="images/Starfree.svg">
-                                </div>
-                            </div>
-                            <div class="footer_right">
-                                <img src="images/hearts.svg" class="hearts">
-                                <div class="hearts_red">
-                                    <img src="images/heart.svg">
-                                </div>
-                                <img src="images/sac.svg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="phone_box">
-                        <div class="phone_box_area">
-                            <div class="phone_left">
-                                <img src="images/phone.png">
-                            </div>
-                            <div class="phone_right checked_phone">
-                                <img src="images/ISO-Standards.svg">
-                            </div>
-                        </div>
-                        <div class="phone_footer">
-                            <div class="footer_left">
-                                <p>iPhone 11 Pro Max</p>
-                                <p>$850</p>
-                                <div class="stars">
-                                    <img src="images/Starfree1.svg">
-                                    <img src="images/Starfree1.svg">
-                                    <img src="images/Starfree1.svg">
-                                    <img src="images/Starfree.svg">
-                                    <img src="images/Starfree.svg">
-                                </div>
-                            </div>
-                            <div class="footer_right">
-                                <img src="images/hearts.svg" class="hearts">
-                                <div class="hearts_red">
-                                    <img src="images/heart.svg">
-                                </div>
-                                <img src="images/sac.svg">
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+
+
 
                 </div>
             </div>
+        </div>
+        <div>
+            {{ $items->links() }}
         </div>
     </section>
 @endsection

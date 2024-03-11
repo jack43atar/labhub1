@@ -41,6 +41,8 @@ Route::post('/register',            'LoginRegisterController@register')->name('r
 
 Route::post('/sendmail/send',   'SendEmailController@send')->name('contactSendMail');
 
+Route::get('/custom',            'NavItemController@custom')->name('custom');
+Route::post('/custom_save',            'NavItemController@custom_save')->name('custom_save');
 //
 
 Route::get('/store',            'NavItemController@store')->name('store');

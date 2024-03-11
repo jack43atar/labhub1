@@ -14,6 +14,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\DB;
 
 class LabReservationController extends Controller
 {
@@ -34,9 +35,13 @@ class LabReservationController extends Controller
     {
         $title = 'Lab Reservation';
         $lab_types = LabType::all();
+        $data = DB::table('Results')->select('country')->distinct()->get();
+        $country = [];
+        foreach ($data as $key => $value) {
+            $country[] = $value;
+        }
 
-
-        return view('site.lab_reservation.lab_reservation_step_one', compact('title', 'lab_types'));
+        return view('site.lab_reservation.lab_reservation_step_one', compact('title','country', 'lab_types'));
     }
 
     public function getLabTypes(Request $request)

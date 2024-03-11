@@ -4,7 +4,7 @@
 .store_area .dropdown-menu {
     border-radius: 0 10px 10px 10px;
     margin-top: 44px;
-   padding: 26px;
+    padding: 26px;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.16);
     background-color: #f8f8f8;
     border: none;
@@ -36,11 +36,12 @@
 .mobile_menu {
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid #8A8A8A;
+    border-bottom: 2px solid #8a8a8a;
     width: 880px;
     padding-bottom: 13px;
 }
-.mobile_menu a, .phones_menu a {
+.mobile_menu a,
+.phones_menu a {
     font-family: "Segoe UI Semibold";
     font-size: 18px;
     font-weight: 600;
@@ -51,22 +52,21 @@
     margin-right: 44px;
 }
 .phone_area {
-    padding-left: 138px;
+    /* padding-left: 138px; */
 }
 .phones_menu {
     display: flex;
     padding-top: 19px;
-
 }
 .store .business_signup {
     margin-bottom: 0;
 }
 
-.container_brands input[type=checkbox]:checked + span{
+.container_brands input[type="checkbox"]:checked + span {
     color: #9b0405;
-   padding-left: 14px;
+    padding-left: 14px;
 }
-.container_brands input[type=checkbox] {
+.container_brands input[type="checkbox"] {
     display: none;
 }
 .container_brands .checkmarks:after {
@@ -134,6 +134,9 @@ label {
     padding-top: 6px;
     margin-bottom: 14px;
 }
+.pagination {
+    display: block;
+}
 .phone_box_area {
     display: flex;
     justify-content: space-between;
@@ -157,7 +160,7 @@ label {
     display: flex;
     flex-wrap: wrap;
     padding: 0 0 0 110px;
-    width: 90%;
+    /* width: 90%; */
 }
 .checked_phone {
     background-color: #8a8a8a;
@@ -197,13 +200,15 @@ label {
 .footer_right img {
     cursor: pointer;
 }
-.footer_right .hearts, .footer_right .hearts_red {
+.footer_right .hearts,
+.footer_right .hearts_red {
     margin-right: 11px;
 }
 .hearts_red {
     display: none;
 }
-.mobile_menu .active2 a, .phones_menu .active2 a {
+.mobile_menu .active2 a,
+.phones_menu .active2 a {
     font-family: "segoe-ui-bold";
     font-size: 18px;
     font-weight: bold;
@@ -231,7 +236,8 @@ label {
         flex-wrap: wrap;
         justify-content: end;
     }
-    .mobile_menu a, .phones_menu a {
+    .mobile_menu a,
+    .phones_menu a {
         margin-right: 30px;
         margin-bottom: 5px;
         display: block;
@@ -257,7 +263,8 @@ label {
     .phone_area {
         padding-left: 15px;
     }
-    .brands h2, .container_brands {
+    .brands h2,
+    .container_brands {
         font-size: 14px;
     }
     .phone_left img {

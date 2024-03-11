@@ -1,9 +1,10 @@
-.vertical-menu {/*Vertical menu styling*/
+.vertical-menu {
+    /*Vertical menu styling*/
     padding-left: 500px;
     display: flex;
     flex-direction: column;
     position: relative;
-    list-style:none;
+    list-style: none;
     margin-top: 46px;
     width: 888px;
     border-right: 1px solid #fff;
@@ -15,7 +16,7 @@
 .vertical-menu a {
     width: 430px;
     padding: 20px;
-    display:block;
+    display: block;
     font-family: "segoe-ui";
     font-size: 18px;
     font-weight: 600;
@@ -23,13 +24,14 @@
     text-align: left;
 }
 .second_navbar_area a#pills-home-tab:hover {
-    color: rgba(255,255,255, 0.5)!important;
+    color: rgba(255, 255, 255, 0.5) !important;
 }
 .second_navbar_area a#pills-profile-tab:hover {
-    color: rgba(255,255,255, 0.5)!important;
+    color: rgba(255, 255, 255, 0.5) !important;
 }
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: rgba(0,0,0,.7)!important;
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0, 0, 0, 0.7) !important;
 }
 /*Sub Menu */
 .vertical-menu ul {
@@ -45,12 +47,12 @@
 
 .vertical-menu ul li {
     opacity: 0;
-    margin-top:20px;
+    margin-top: 20px;
 }
 .vertical-menu li:hover li {
     opacity: 1;
     margin-top: 0px;
-    pointer-events:auto;
+    pointer-events: auto;
 }
 .vertical-menu ul li a {
     display: block;
@@ -61,27 +63,27 @@
 }
 
 a {
-    text-decoration:none;
+    text-decoration: none;
 }
 ul {
-    margin:0;
+    margin: 0;
 }
 
 nav ul {
-    text-align:center;
+    text-align: center;
 }
 nav ul li {
-    display:inline-block;
+    display: inline-block;
 }
 nav ul > li a {
-    display:block;
-    letter-spacing:1px;
-    padding:0px 30px;
-    padding-bottom:15px;
-    color:#000;
-    font-weight:bold;
-    font-size:13px;
-    text-transform:uppercase;
+    display: block;
+    letter-spacing: 1px;
+    padding: 0px 30px;
+    padding-bottom: 15px;
+    color: #000;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
 }
 nav ul.sub-menu-0 {
     position: absolute;
@@ -94,53 +96,52 @@ nav ul.sub-menu-0 {
     z-index: 300;
     padding-bottom: 121px;
 }
-nav ul.sub-menu-0 > li  {
-    text-align:left;
-    display:inline-block;
-    text-transform:uppercase;
-    vertical-align:top;
-    font-weight:normal;
-    font-size:13px;
+nav ul.sub-menu-0 > li {
+    text-align: left;
+    display: inline-block;
+    text-transform: uppercase;
+    vertical-align: top;
+    font-weight: normal;
+    font-size: 13px;
 }
-nav ul.sub-menu-0 > li a  {
-    font-weight:normal;
-    padding:0px;
+nav ul.sub-menu-0 > li a {
+    font-weight: normal;
+    padding: 0px;
 }
-nav ul.sub-menu-1 > li a  {
-    font-weight:normal;
-    font-size:12px;
+nav ul.sub-menu-1 > li a {
+    font-weight: normal;
+    font-size: 12px;
 }
 nav ul > li:hover ul.sub-menu-0 {
-    display:inline-block;
+    display: inline-block;
 }
 nav ul.sub-menu-1 {
-    text-align:left;
-    width:140px;
-    padding:20px 30px 40px 0px;
+    text-align: left;
+    width: 140px;
+    padding: 20px 30px 40px 0px;
 }
 nav ul.sub-menu-1 li {
-    display:block;
-    font-size:12px;
+    display: block;
+    font-size: 12px;
 }
 nav ul.sub-menu-1 li a {
-    padding:0px;
-    padding-bottom:5px;
-    text-transform:none;
+    padding: 0px;
+    padding-bottom: 5px;
+    text-transform: none;
 }
 nav ul.sub-menu-1 li a:hover {
-    padding-left:15px;
-    text-decoration:none;
+    padding-left: 15px;
+    text-decoration: none;
 }
 nav ul > li a:hover {
-    text-decoration:underline;
+    text-decoration: underline;
 }
-
 
 .second_navbar .nav-pills .nav-link {
     font-family: "Segoe UI Semibold";
     font-size: 18px;
     font-weight: 600;
-    color: rgba(255,255,255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .product_industries {
@@ -165,7 +166,10 @@ nav ul > li a:hover {
 .product_menu {
     display: flex;
 }
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
     background-color: transparent;
     font-family: "Segoe UI Semibold";
     font-size: 18px;
@@ -184,7 +188,7 @@ nav ul > li a:hover {
     font-family: "Segoe UI Semibold";
     font-size: 18px;
     font-weight: 600;
-    color: rgba(255,255,255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
 }
 .nav_hover_menu {
     display: none;
@@ -222,7 +226,8 @@ nav ul > li a:hover {
     top: 0;
     z-index: 1;
 }
-.products_dropbtn .btn-group, .btn-group-vertical {
+.products_dropbtn .btn-group,
+.btn-group-vertical {
     position: unset;
 }
 .second_area div#pills-home {
@@ -250,7 +255,8 @@ nav ul > li a:hover {
 .products_dropbtn .btn-group.dropright.tab_dropdown {
     width: 100%;
 }
-.products_tab .second_dropdown-content a, .products_tab .dropdown-content a {
+.products_tab .second_dropdown-content a,
+.products_tab .dropdown-content a {
     margin-bottom: 29px;
     text-decoration: none;
     display: block;
@@ -260,7 +266,8 @@ nav ul > li a:hover {
     text-align: left;
 }
 
-.dropdown:hover .dropdown-content, .dropdown:hover .second_dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown:hover .second_dropdown-content {
     display: block;
 }
 .dropdown:hover .dropbtn {
@@ -269,12 +276,13 @@ nav ul > li a:hover {
 }
 
 .products_tab {
-    display: flex!important;
+    display: flex !important;
     flex-direction: column;
     position: relative;
 }
 
-.second_navbar .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.second_navbar .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
     font-family: "Segoe UI Semibold";
     font-size: 18px;
     font-weight: 600;
@@ -286,7 +294,7 @@ nav ul > li a:hover {
     font-family: "Segoe UI Semibold";
     font-size: 18px;
     font-weight: 600;
-    color: rgba(255,255,255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
 }
 .second_navbar_area {
     padding: 47px 416px 0 520px;
@@ -358,6 +366,12 @@ nav ul > li a:hover {
     color: #9b0405;
     margin-top: 15px;
 }
+.upload-img img {
+    width: 65px;
+}
+.upload-img h2 {
+    display: inline;
+}
 .contact_form {
     width: 30%;
     border-radius: 20px;
@@ -369,6 +383,10 @@ nav ul > li a:hover {
     position: absolute;
     top: -433px;
     right: 0;
+}
+.upload-form {
+    position: inherit !important;
+    margin: auto;
 }
 .contact_form h2 {
     font-family: "Segoe UI Semibold";
@@ -530,7 +548,7 @@ nav ul > li a:hover {
     text-align: left;
 }
 .with_product h2 {
-    text-align: left!important;
+    text-align: left !important;
 }
 .category {
     display: flex;
@@ -626,7 +644,7 @@ nav ul > li a:hover {
     z-index: 9999999999;
     position: relative;
 }
-.right_result  {
+.right_result {
     width: 35px;
     height: 35px;
     background-color: #ffffff;
@@ -701,7 +719,9 @@ nav ul > li a:hover {
 .second_result_line_right p {
     text-align: right;
 }
-.second_result_line_right, .second_result_line_center, .second_result_line_left {
+.second_result_line_right,
+.second_result_line_center,
+.second_result_line_left {
     width: 20%;
 }
 
@@ -746,14 +766,16 @@ nav ul > li a:hover {
     }
 }
 @media (max-width: 1200px) {
-    .testing, .scan {
+    .testing,
+    .scan {
         flex-direction: column;
     }
     .second_navbar_area {
         padding: 46px 0 0 63px;
     }
 
-    .testing .testing_lef_area, .scan .testing_lef_area {
+    .testing .testing_lef_area,
+    .scan .testing_lef_area {
         width: 85%;
         margin: 0 auto;
     }
@@ -834,9 +856,11 @@ nav ul > li a:hover {
 }
 @media (max-width: 990px) {
     .dropdown-menu {
-        position: absolute!important;
+        position: absolute !important;
     }
-    .products_tab .second_dropdown-content a, .products_tab .dropdown-content a, .tab_dropdown .dropline  {
+    .products_tab .second_dropdown-content a,
+    .products_tab .dropdown-content a,
+    .tab_dropdown .dropline {
         font-size: 15px;
     }
     .drop_area {
@@ -848,7 +872,8 @@ nav ul > li a:hover {
     .products_dropbtn .dropdown-menu {
         left: 265px;
     }
-    .products_tab .second_dropdown-content a, .products_tab .dropdown-content a {
+    .products_tab .second_dropdown-content a,
+    .products_tab .dropdown-content a {
         margin-bottom: 26px;
     }
     .drop_box {
@@ -877,10 +902,12 @@ nav ul > li a:hover {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .box1, .box2 {
+    .box1,
+    .box2 {
         margin-bottom: 80px;
     }
-    .testing_right_area p, .testing_right_area h3 {
+    .testing_right_area p,
+    .testing_right_area h3 {
         text-align: center;
     }
     .scan {
@@ -889,7 +916,9 @@ nav ul > li a:hover {
     .success {
         margin-top: 20px;
     }
-    .second_result_line_right, .second_result_line_center, .second_result_line_left {
+    .second_result_line_right,
+    .second_result_line_center,
+    .second_result_line_left {
         width: 25%;
     }
     .success h2 {
@@ -900,7 +929,8 @@ nav ul > li a:hover {
     .reserv_lab {
         flex-direction: column;
     }
-    .reserv_lab_box, .contact_form  {
+    .reserv_lab_box,
+    .contact_form {
         width: 70%;
         margin: 20px auto;
     }
@@ -927,7 +957,8 @@ nav ul > li a:hover {
     }
 }
 @media (max-width: 500px) {
-    .reserv_lab_box, .contact_form {
+    .reserv_lab_box,
+    .contact_form {
         width: 82%;
     }
     .testing {
@@ -982,11 +1013,6 @@ nav ul > li a:hover {
     }
 }
 
-
-
-
-
-
 .li_title {
     font-size: 20px;
     font-family: "Segoe UI Semibold";
@@ -997,7 +1023,7 @@ nav ul > li a:hover {
     padding: 30px 0 !important;
 }
 
-.sub_menu_new>ul{
+.sub_menu_new > ul {
     width: max-content;
     position: relative;
     left: 480px;
@@ -1007,12 +1033,11 @@ nav ul > li a:hover {
     text-align: start;
 }
 
-
-.sub_menu_new li a{
+.sub_menu_new li a {
     color: white;
     padding: 10px 0 !important;
 }
-.sub_menu_new li{
+.sub_menu_new li {
     color: white;
 }
 
@@ -1020,7 +1045,7 @@ nav ul > li a:hover {
 .analytic-overview-container > h1 {
     font-size: 38px;
     letter-spacing: 0;
-    color: #1A1A1A;
+    color: #1a1a1a;
     opacity: 1;
 }
 
@@ -1035,7 +1060,6 @@ nav ul > li a:hover {
     margin: auto;
 }
 
-
 /*modal*/
 
 #exampleModalCenter {
@@ -1046,19 +1070,21 @@ nav ul > li a:hover {
     background-color: inherit;
     border: none;
 }
-.signup_modal, .login_modal {
+.signup_modal,
+.login_modal {
     text-align: center;
     padding: 44px 0;
     margin: 0 40px;
     border-radius: 20px;
     box-shadow: 0 0 50px #00000029;
-    background: #FFFFFF 0 0 no-repeat padding-box;
+    background: #ffffff 0 0 no-repeat padding-box;
     height: 200px;
     width: 450px;
-    color: #000000DE;
+    color: #000000de;
     font-family: "Segoe UI Semibold";
 }
-.signup_modal img, .login_modal img {
+.signup_modal img,
+.login_modal img {
     margin-bottom: 17px;
 }
 

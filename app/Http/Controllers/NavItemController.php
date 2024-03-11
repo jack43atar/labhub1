@@ -11,8 +11,8 @@ class NavItemController extends Controller
     public function store()
     {
         $title = 'Store';
-
-        return view('site.store', compact('title'));
+        $items = DB::table('items')->paginate(12);
+        return view('site.store', compact('title','items'));
     }
 
     // lav Reservation
@@ -22,6 +22,21 @@ class NavItemController extends Controller
         $title = 'Lav Reservation';
 
         return view('site.lab_reservation', compact('title'));
+    }
+    public function custom(){
+        return view('layouts.custom');
+    }
+    public function custom_save(Request $request){
+        $data= $request->data;
+        foreach($data as $key=>$value){
+            $array = array(
+                "name"=>$value['name'],
+                "photourl"=>$value['photourl'],
+                "price"=>$value['price']
+            );
+            $res = DB::table('items')->insert($array);
+        }
+        print_r(1);
     }
     public function labStepTwo()
     {

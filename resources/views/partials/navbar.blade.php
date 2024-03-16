@@ -288,6 +288,9 @@ $link = $_SERVER['REQUEST_URI'];
                     <li class="nav-item">
                         <a class="nav-link {{strpos($link, 'store') ? 'active_nav_menu' : ''}}" href="{{route('store')}}">Store</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{strpos($link, 'contract') ? 'active_nav_menu' : ''}}" href="{{route('contract')}}">Contract</a>
+                    </li>
                     <li id="menu-item-about" class="nav-item">
                         <a class="nav-link {{strpos($link, 'about') ? 'active_nav_menu' : ''}}" href="#">About</a>
                         <ul class="sub-menu-0">
@@ -335,20 +338,6 @@ $link = $_SERVER['REQUEST_URI'];
                     @endif
 
 
-                @if(strpos($link, 'store'))
-                        <li class="nav-item">
-                            <div class="images">
-                                <img src="images/hearts.svg" class="hearts">
-                                <div class="hearts_red">
-                                    <img src="images/heart.svg">
-                                </div>
-                                <div class="sac">
-                                    <img src="images/sac.svg">
-                                    <span>1</span>
-                                </div>
-                            </div>
-                        </li>
-                    @endif
                 </ul>
             </div>
             <ul class="business_personal">

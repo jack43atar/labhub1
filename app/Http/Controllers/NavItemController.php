@@ -117,7 +117,11 @@ class NavItemController extends Controller
 
         return view('site.services.products', compact('title'));
     }
-
+    //contract
+    public function contract()
+    {
+        return view('site.contract.index');
+    }
     //about
 
     public function ourPartners()

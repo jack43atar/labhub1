@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Auth::routes([
     'register' => false, // Registration Routes...
     'login' => false, // Registration Routes...
@@ -23,6 +25,10 @@ Route::get('/', 'IndexController@index')->name('home');
 // login, logout, register
 
 // GoogleLoginController redirect and callback urls
+Route::get('google',function(){
+    Return view('home');
+ });
+    
 Route::get('/login/google', 'GoogleLoginController@redirectToGoogle')->name('auth.google');
 Route::get('/login/google/callback', 'GoogleLoginController@handleGoogleCallback');
 
@@ -76,7 +82,8 @@ Route::get('/services/resources/product-safety',                                
 Route::get('/services/resources/rf-exposure',                                                   'NavItemController@rfExposure')->name('services.resources.rf_exposure');
 Route::get('/services/resources/reference-link',                                                'NavItemController@referenceLink')->name('services.resources.reference_link');
 Route::get('/services/resources/products',                                                      'NavItemController@products')->name('services.resources.products');
-
+//contract----------------------------------------------------------------------------------------------------------------------------------------------------------
+Route::get('/contract','NavItemController@contract')->name('contract');
 //about---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Route::get('/about/our-partners',                                                               'NavItemController@ourPartners')->name('about.our_partners');
@@ -124,3 +131,6 @@ Route::post('submit-rfq/contact-us', 'contactUsController@index')->name('submitr
 
 // Home Page Search Route
 Route::post('/homeSearch', 'IndexController@homeSearch')->name('home-search');
+// Checkout
+Route::get('/checkout', 'CheckoutController@index')->name('checkout');
+Route::get('/checkout/toast', 'CheckoutController@toastnotification')->name('check.toast');

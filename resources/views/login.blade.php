@@ -7,6 +7,7 @@
      <meta name="csrf-token" content="{{ csrf_token() }}" />
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="google-signin-client_id" content="866529374797-lail8hpspjj6qlsk27v3jti59l3etq9q.apps.googleusercontent.com">
     <title>login</title>
     <link rel="icon" href="http://www.telcron.net/wp-content/themes/theme1490/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="{{ asset('libs/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
     <link rel="stylesheet" href="{{ asset('css/business_login.css') }}">
+
 </head>
 <body>
 <section class="login">
@@ -54,11 +56,16 @@
                         </div>
                         <button type="submit">Sign In</button>
                         <div class="block mt-4">
-                            <div class="flex items-center justify-end mt-4">
+                            <!-- <div class="flex items-center justify-end mt-4">
                                 <a href="{{ url('login/google') }}">
                                     <img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png">
                                 </a>
-                            </div>
+                            </div> -->
+                                <div id="g_id_onload"
+                                    data-client_id="866529374797-npcd5h9o0ir5vjoiaj5utgcbh7bclqvj.apps.googleusercontent.com"
+                                    data-callback="handleCredentialResponse">
+                                </div>
+                                <div class="g_id_signin" data-type="standard"></div>
                         </div>
                     </form>
                 </div>
@@ -132,11 +139,24 @@
 
 
 
-
+<script src="https://accounts.google.com/gsi/client" async defer></script>
 <script src="libs/js/jquery-3.3.1.min.js"></script>
 <script src="libs/js/popper.min.js"></script>
 <script src="libs/js/bootstrap.min.js"></script>
 <script src="libs/js/wow.min.js"></script>
 <script src="js/script.js"></script>
+<script>
+
+function handleCredentialResponse(googleUser) {
+    console.log("ss")
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+
+
+</script>
 </body>
 </html>

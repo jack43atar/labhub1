@@ -22,7 +22,7 @@ class GoogleLoginController extends Controller
         // die("ok");
         // Socialite::driver($provider)->stateless();
         $user = Socialite::driver('google')->stateless()->with(['access_type' => 'offline'])->user();
-        
+        die("ok");
         $existingUser = User::where('email', $user->email)->first();
 
         if ($existingUser) {

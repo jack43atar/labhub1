@@ -45,6 +45,11 @@ Route::get('/custom',            'NavItemController@custom')->name('custom');
 Route::post('/custom_save',            'NavItemController@custom_save')->name('custom_save');
 //
 
+Route::get('/track','TrackController@index');
+
+Route::post('/track','TrackController@track')->name('track');
+
+
 Route::get('/store',            'NavItemController@store')->name('store');
 Route::get('/lab-reservation/booking/step-one',  'LabReservationController@labReservationOne')->name('labReservationOne');
 Route::get('/lab-reservation/booking/step-two',  'LabReservationController@labReservationTwo')->name('labReservationTwo');

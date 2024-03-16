@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<!-- sections -->
 @section('css')
 <style>
     .justify {
@@ -9,10 +10,33 @@
 	 .category_boxes {
         cursor: pointer;
     }
+    .sticky{
+        position: fixed;
+        bottom: 15px;
+        right: 35px;
+        width: 60px;
+        text-align: -webkit-right;
+    }
+    .sticky-img{
+        cursor: pointer;
+        width: 100%;
+    }
+    [data-tooltip]:hover:after{
+        content: attr(data-tooltip);
+        position: absolute;
+        top: -50px;
+        right: -20px;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+    }
 </style>
 @endsection
 @section('content')
 {{--    {{dd(\Illuminate\Support\Facades\Auth::check())}}--}}
+    <a href="#contactform" data-tooltip="Image/Video Upload" class="sticky">
+        <img class="sticky-img" src="images/uploading.png" alt="">
+    </a>
     <section class="home">
         <div class="second_menu">
             @include('partials.sign_in_log_out')
@@ -27,11 +51,11 @@
                     Simply put, we help make pre- and post-market compliance steps that
                     product manufacturers’ need or want, successful.</p>
                 <form action="{{url('homeSearch')}}" method="post" role="search">
-                @csrf
-                <div class="find_search">
-                    <input type="text" name="search" placeholder="Find Certification Information with Product iQ">
-                </div>
-            </form>
+                    @csrf
+                    <div class="find_search">
+                        <input type="text" name="search" placeholder="Find Certification Information with Product iQ">
+                    </div>
+                </form>
             </div>
         </div>
         <div class="home_page">
@@ -155,9 +179,8 @@
                 </div>
             </div>
         </div>
- 
 
-        <form class="contact_form upload-form" method="POST" action="{{ route('contactSendMail') }}">
+        <form id="contactform" class="contact_form upload-form" method="POST" action="{{ route('contactSendMail') }}">
             @csrf
             <div class="contact_form_img upload-img">
                 <img src="images/uploading.png">

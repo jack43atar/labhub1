@@ -58,7 +58,7 @@
 @endsection
 @section('content')
     <a href="{{route('checkout')}}" class="sticky">
-        <div class="cart-count">{{ $cartcount }}</div>
+        <div id="numberOfOrders" class="cart-count">{{ $cartcount }}</div>
         <i class="fa fa-shopping-cart fa-rotate-360 sticky sticky-icon cart-icon"></i>
     </a>
     <section class="store">
@@ -175,7 +175,7 @@
                         <div class="phone_box">
                             <div class="phone_box_area">
                                 <div class="phone_left">
-                                    <img src="{{$item->photourl}}">
+                                    <!-- <img src="{{$item->photourl}}"> -->
                                 </div>
                                 <div class="phone_right">
 
@@ -202,11 +202,13 @@
                         </div>
                     @endforeach
                 </div>
+                
             </div>
         </div>
         <div>
             {{ $items->links() }}
         </div>
+        <input type="hidden" value="{{(auth()->user()!==null)?auth()->user()->id:''}}" class="hidden" id="hidden_id"/>
     </section>
 @endsection
 @section('js')
@@ -214,18 +216,20 @@
     $(document).ready(function(){
         // Attach click event handler to Add Cart buttons
         $('.add-to-cart').click(function(){
+            var user = $('#hidden_id')[0].value;
+            if(user=="") window.location.href = "/login-user";
             // Extract item data from the data attribute
             var itemData = $(this).data('item');
+            itemData.user_id = user;
             // Send item data via Ajax to the server
             $.ajax({
                 url: '/cart',
                 method: 'POST',
-                data: {
-                    item: itemData
-                },
+                data: itemData,
                 success: function(response){
                     // Handle success response
-                    console.log('Item added to cart successfully');
+                    $('#numberOfOrders')[0].innerHTML=response;
+                    console.log(response);
                 },
                 error: function(xhr, status, error){
                     // Handle error response

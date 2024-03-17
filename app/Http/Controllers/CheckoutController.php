@@ -16,19 +16,18 @@ class CheckoutController extends Controller
         return view('site.store',compact('name','price'));
     }
     public function setcart(Request $request){
-        $user_id = $request->userId;
-        $price = $request->price;
-        $item_id = '1';
-        $count = '1';
-        $data = array(
-            "user_id" => $user_id,
-            "price" => $price,
-            "count" => $count,
-            "item_id"=>$item_id
-        );
-        DB::table('cart')->insert($data);
-        // get count
-        // $cartcount = DB::table('cart')->select('count')->count();
-        // return view('site.store',compact('cartcount'));
+        $user_id = $request->user_id;
+        $item_id = $request->id;
+        $exist = DB::table('cart')->where(array('user_id'=>$user_id,'item_id'=>$item_id,'paid'=>0))->count();
+        if($exist==0){
+            $data = array(
+                "user_id" => $user_id,
+                "item_id"=>$item_id
+            );
+            DB::table('cart')->insert($data);
+        }
+        $number = DB::table('cart')->where(array('user_id'=>$user_id,'paid'=>0))->count();
+        print_r(json_encode($number));
+
     }
 }

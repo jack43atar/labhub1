@@ -85,6 +85,7 @@ Route::get('/services/resources/reference-link',                                
 Route::get('/services/resources/products',                                                      'NavItemController@products')->name('services.resources.products');
 //contract----------------------------------------------------------------------------------------------------------------------------------------------------------
 Route::get('/contract','NavItemController@contract')->name('contract');
+Route::get('/contract/next','NavItemController@contractnext')->name('contract-next');
 //about---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Route::get('/about/our-partners',                                                               'NavItemController@ourPartners')->name('about.our_partners');
@@ -132,6 +133,7 @@ Route::post('submit-rfq/contact-us', 'contactUsController@index')->name('submitr
 
 // Home Page Search Route
 Route::post('/homeSearch', 'IndexController@homeSearch')->name('home-search');
-// Checkout
+// Checkout & Cart
+Route::post('/cart', 'CheckoutController@setcart')->name('cart');
 Route::get('/checkout', 'CheckoutController@index')->name('checkout');
 Route::get('/checkout/toast', 'CheckoutController@toastnotification')->name('check.toast');

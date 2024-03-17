@@ -2,7 +2,6 @@
 @section('css')
     <link rel="stylesheet" href="{{ asset('css/store.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <style>
     .justify {
         text-align: justify;
@@ -41,11 +40,26 @@
         color: black;
         opacity: 0.7;
     }
+    .cart-count{
+        color: #121212;
+        font-weight: 600;
+        background-color: #fcfcfd;
+        text-align: center;
+        border-radius: 50px;
+        width: 22px;
+        margin-bottom: 28px;
+        margin-right: 7px;
+    }
+    .cart-icon{
+        color: #93afef;
+        z-index: -1;
+    }
 </style>
 @endsection
 @section('content')
     <a href="{{route('checkout')}}" class="sticky">
-        <i class="fa fa-shopping-cart fa-rotate-360 sticky sticky-icon"></i>
+        <div class="cart-count">{{ $cartcount }}</div>
+        <i class="fa fa-shopping-cart fa-rotate-360 sticky sticky-icon cart-icon"></i>
     </a>
     <section class="store">
         <div class="second_menu">
@@ -158,40 +172,34 @@
                 </div> -->
                 <div class="phne_brands">
                     @foreach ($items as $item)
-                    <div class="phone_box">
-                        <div class="phone_box_area">
-                            <div class="phone_left">
-                                <img src="{{$item->photourl}}">
-                            </div>
-                            <div class="phone_right">
+                        <div class="phone_box">
+                            <div class="phone_box_area">
+                                <div class="phone_left">
+                                    <img src="{{$item->photourl}}">
+                                </div>
+                                <div class="phone_right">
 
+                                </div>
+                            </div>
+                            <div class="phone_footer">
+                                <div class="footer_left">
+                                    <p>{{$item->name}}</p>
+                                    <p>${{$item->price}}</p>
+                                    <!-- <div class="stars">
+                                        <img src="images/Starfree1.svg">
+                                        <img src="images/Starfree1.svg">
+                                        <img src="images/Starfree1.svg">
+                                        <img src="images/Starfree.svg">
+                                        <img src="images/Starfree.svg">
+                                    </div> -->
+                                </div>
+                                <div class="footer_right">
+                                    <button type="button" class="btn btn-primary add-to-cart" data-item="{{ json_encode($item) }}">
+                                        <i class="fa fa-shopping-cart small-cart"></i>Add Cart
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="phone_footer">
-                            <div class="footer_left">
-                                <p>{{$item->name}}</p>
-                                <p>${{$item->price}}</p>
-                                <!-- <div class="stars">
-                                    <img src="images/Starfree1.svg">
-                                    <img src="images/Starfree1.svg">
-                                    <img src="images/Starfree1.svg">
-                                    <img src="images/Starfree.svg">
-                                    <img src="images/Starfree.svg">
-                                </div> -->
-                            </div>
-                            <div class="footer_right">
-                                <!-- <img src="images/hearts.svg" class="hearts"> -->
-                                <!-- <div class="hearts_red">
-                                    <img src="images/heart.svg">
-                                </div> -->
-                                <!-- <a href="#" onclick="addtocart('{{ $item->name }}', '{{ $item->price }}')">
-                                    <i class="fa fa-shopping-cart small-cart"></i>Add Cart
-                                </a> -->
-                                <button type="button" class="btn btn-primary" id="toastbtn"><i class="fa fa-shopping-cart small-cart"></i>Add Cart</button>
-                                <div id="toast"></div>
-                            </div>
-                        </div>
-                    </div>
                     @endforeach
                 </div>
             </div>
@@ -202,24 +210,29 @@
     </section>
 @endsection
 @section('js')
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-   document.getElementById('toastbtn').onclick=function(){
-    var toast = '<div class="toast-container top-0 end-0 p-3">'+
-                    '<div class="toast show fade" role="alert" aria-live="assertive" aria-atomic="true">'+
-                        '<div class="toast-body">'+
-                        '<div class="d-flex gap-4">'+
-                            '<span class="text-primary"><i class="fa-solid fa-circle-info fa-lg"></i></span>'+
-                            '<div class="d-flex flex-grow-1 align-items-center">'+
-                            '<span class="fw-semibold">Hello, world! This is a toast message.</span>'+
-                            '<button type="button" class="btn-close btn-close-sm btn-close-black ms-auto" data-bs-dismiss="toast"'+
-                                'aria-label="Close"></button>'+
-                            '</div>'+
-                        '</div>'+
-                        '</div>'+
-                    '</div>'+
-                '</div>'
-    document.createElement(toast);
-   }
+    $(document).ready(function(){
+        // Attach click event handler to Add Cart buttons
+        $('.add-to-cart').click(function(){
+            // Extract item data from the data attribute
+            var itemData = $(this).data('item');
+            // Send item data via Ajax to the server
+            $.ajax({
+                url: '/cart',
+                method: 'POST',
+                data: {
+                    item: itemData
+                },
+                success: function(response){
+                    // Handle success response
+                    console.log('Item added to cart successfully');
+                },
+                error: function(xhr, status, error){
+                    // Handle error response
+                    console.error('Error adding item to cart:', error);
+                }
+            });
+        });
+    });
 </script>
 @endsection

@@ -5,10 +5,6 @@
     <link rel="stylesheet" href="{{ asset('css/lightpick.css') }}">
     <link rel="stylesheet" href="{{ asset('css/lightpick_style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/contract.css') }}">
-    <link rel="shortcut icon" sizes="16x16" href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Extended" rel="stylesheet" nonce="SXP3BtdUd_5uEonYEmpRcA">
-    <link rel="stylesheet" href="https://www.gstatic.com/_/freebird/_/ss/k=freebird.v.fBQ93NgRGRA.L.W.O/am=wA/d=1/rs=AMjVe6jBYR1CRMfm_KwQT-t08msyO5v8Yw" data-id="_cl" nonce="SXP3BtdUd_5uEonYEmpRcA">
-    <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:300,400,400i,500,700&subset=latin,vietnamese,latin-ext,cyrillic,greek,cyrillic-ext,greek-ext" rel="stylesheet" nonce="SXP3BtdUd_5uEonYEmpRcA">
 @endsection
 @section('content')
     <div class="container">
@@ -143,11 +139,11 @@
                         </div>
                     </span>
                     <div>
-                        <input type="checkbox" class="checkbox" name="check_read" >&nbsp;
+                        <input type="checkbox" class="checkbox" name="check_read"  >&nbsp;
                         <span class="aDTYNe snByac n5vBHf OIC90c">I have read and accept the general contract for services</span>
                     </div>
                     <div>
-                        <input type="checkbox" class="checkbox" name="check_declined" >&nbsp;
+                        <input type="checkbox" class="checkbox" name="check_declined">&nbsp;
                         <span class="aDTYNe snByac n5vBHf OIC90c">I declined the general contract for services</span>
                     </div>
                 </div>
@@ -155,7 +151,9 @@
             <div class="main-container mt-2">
                 <div class="btn-group">
                     <div class="group">
-                        <button class="next-btn" onclick="visiblehidden();">Next</button>
+                        <a href="{{route('contract-next')}}">
+                            <button class="next-btn text-center">Next</button>
+                        </a>
                         <button type="button" class="btn-clear">Clear form</button>
                     </div>
                     <div class="sub-letter">Never submit passwords through Google Forms.</div>
@@ -173,68 +171,8 @@
                 </div>
             </div>
         </div>
-        <div class="row d-flex justify-content-center hidden" id="part_2">
-            <div class="main-container">
-                <div>
-                    <div class="service">
-                        Service Recipient:
-                    </div>
-                    <div class="service-revert">
-                        <b>selected lab</b>
-                    </div>
-                </div>
-                <div class="mt-4">
-                    <div class="sign radius-top radius-bottom pt-4">
-                        Please sign name here.*<br>
-                        <input type="text" class="input-sign" placeholder="Your answer" id="">
-                    </div>
-                </div>
-                <div class="mt-4">
-                    <div class="sign radius-top radius-bottom">
-                        Please select date here.*<br>
-                        <p class="date">Date</p>
-                        <input type="date" class="input-date" placeholder="mm/dd/yyyy" id="">
-                    </div>
-                </div>
-                <div class="btn-group mt-2">
-                    <div class="group">
-                        <div>
-                            <button class="next-btn">Back</button>
-                            <button class="submit-btn">Submit</button>
-                        </div>
-                        <button type="button" class="btn-clear">Clear form</button>
-                    </div>
-                </div>
-                <div class="btn-group">
-                    <div class="sub-letter">Never submit passwords through Google Forms.</div>
-                    <div class="sub-letter text-center text-center">Never submit passwords through Google Forms.
-                        <a href="">Report Abuse</a>-
-                        <a href="">Terms of Service</a>-
-                        <a href="">Privacy Policy</a>
-                    </div>
-                    <div class="sub-title">
-                        <a href="https://www.google.com/forms/about/?utm_source=product&utm_medium=forms_logo&utm_campaign=forms">
-                            <img class="g-img" src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_dark_clr_74x24px.svg" alt="Google" height="24px" width="74px">
-                            &nbsp;<span class="form">Forms</span>
-                        </a>
-                    </div>
-                </div>
-            <div>
-        </div>
     </div>
     
 @endsection
 
 
-@section('js')
-    <script>
-        function visiblehidden() {
-            let visible = document.getElementById("part_1");
-            let hidden = document.getElementById("part_2");
-            
-            visible.setAttribute("class","hidden");
-            hidden.setAttribute("class","visible");
-        }
-    </script>
-
-@endsection

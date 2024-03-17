@@ -5,14 +5,17 @@ namespace App\Http\Controllers;
 use App\LabType;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class NavItemController extends Controller
 {
     public function store()
     {
+        $userId = Auth::id(); // Get the ID of the logged-in user
         $title = 'Store';
         $items = DB::table('items')->paginate(12);
-        return view('site.store', compact('title','items'));
+        $cartcount = DB::table('cart')->select('count')->count();
+        return view('site.store', compact('title','items','userId','cartcount'));
     }
 
     // lav Reservation
@@ -121,6 +124,10 @@ class NavItemController extends Controller
     public function contract()
     {
         return view('site.contract.index');
+    }
+    public function contractnext()
+    {
+        return view('site.contract.contractnext');
     }
     //about
 

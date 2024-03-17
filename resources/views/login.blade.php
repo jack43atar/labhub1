@@ -64,6 +64,9 @@
                                 <div id="g_id_onload"
                                     data-client_id="866529374797-npcd5h9o0ir5vjoiaj5utgcbh7bclqvj.apps.googleusercontent.com"
                                     data-callback="handleCredentialResponse">
+                                    
+                                    
+                                    
                                 </div>
                                 <div class="g_id_signin" data-type="standard"></div>
                         </div>
@@ -147,15 +150,28 @@
 <script src="js/script.js"></script>
 <script>
 
-function handleCredentialResponse(googleUser) {
-    console.log("ss")
-  var profile = googleUser.getBasicProfile();
-  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-  console.log('Name: ' + profile.getName());
-  console.log('Image URL: ' + profile.getImageUrl());
-  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+function handleCredentialResponse(response) {
+    if (response.error) {
+        // Handle errors (e.g., user cancellation, network issues)
+        console.error('Error signing in:', response.error);
+    } else {
+        // Access user profile information
+        const accessToken = response.credential;
+        var tokens = accessToken.split(".");
+        var user_email = JSON.parse(atob(tokens[1])).email;
+        var user_name = JSON.parse(atob(tokens[1])).name;
+        jQuery.ajaxSetup({
+            headers: {
+                "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
+            },
+        });
+        $.post("/login/google", {email:user_email,name:user_name}, function (data, status) {
+            if(data.url=="home"){
+                window.location.href = "/";
+            }
+        },'json');
+    }
 }
-
 
 </script>
 </body>

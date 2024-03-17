@@ -30,7 +30,8 @@ Route::get('google',function(){
  });
     
 Route::get('/login/google', 'GoogleLoginController@redirectToGoogle')->name('auth.google');
-Route::get('/login/google/callback', 'GoogleLoginController@handleGoogleCallback');
+// Route::get('/login/google/callback', 'GoogleLoginController@handleGoogleCallback')->name('auth.redirect');
+Route::post('/login/google', 'GoogleLoginController@login')->name('googleauth');
 
 
 Route::get('/login-user',           'LoginRegisterController@index')->name('userLogin');;

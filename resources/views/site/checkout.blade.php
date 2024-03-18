@@ -52,28 +52,30 @@
                         </div>
                         <div class="d-flex flex-row align-items-center">
                           <div style="width: 120px;" class="d-flex">
-                            <h5 id="count" class="fw-normal mb-0">
+                            <h5 id="count_{{$item->id}}" class="fw-normal mb-0">
                               {{ $item->count }}
                             </h5>
                             <div class="position-relative">
-                              <button type="button" class="number-btn position-absolute add" id="add">
+                              <button type="button" class="number-btn position-absolute increase" onclick="onIncrease({{$item->id}})">
                                 <i class="fa fa-sort-up"></i>
                               </button>
-                              <button type="button" class="number-btn position-absolute mt-2 minus" id="minus">
+                              <button type="button" class="number-btn position-absolute mt-2 decrease" onclick="onDecrease({{$item->id}})">
                                 <i class="fa fa-sort-down"></i>  
                               </button>
                             </div>
                           </div>
                           <div style="width: 80px;">
-                            <h5 class="mb-0" id="totalprice" >${{ ($item->price)*($item->count) }}</h5>
+                            <h5 class="mb-0" id="unitprice_{{$item->id}}" >${{ $item->price }}</h5>
+                          </div>
+                          <div style="width: 80px;">
+                            <h5 class="mb-0" id="totalprice_{{$item->id}}" >${{ ($item->price)*($item->count) }}</h5>
                           </div>
                           <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <input type="hidden" value="{{$item->item_id}}" class="hidden" id="hidden_id"/>
-                  <input type="hidden" value="{{$item->price}}" class="hidden" id="price"/>
+                  <input type="hidden" value="{{$item->price}}" class="hidden" id="price_{{$item->id}}"/>
                 @endforeach
 
               </div>
@@ -168,70 +170,69 @@
 @endsection
 @section('js')
 <script>
-  $(document).ready(function(){
-      // add function
-      $('.add').click(function(){
-        var count = $('#count')[0].innerText;
-        var item_id = $('#hidden_id')[0].value;
-        $.ajax({
-          url:'/add',
-          method:'POST',
-          data:{
-            count: count,
-            item_id: item_id
-          },
-          success: function(response){
-            count++;
-            $('#count')[0].innerHTML=count;
-            var price = $('#price')[0].value;
-            var totalprice = price*count;
-            $('#totalprice')[0].innerText='$'+ totalprice;
-          },
-          error: function(xhr, status, error) {
-            console.error('Error item count:', error);
-          }
-        })
-      })
-      //minus function
-      $('.minus').click(function(){
-        var count = $('#count')[0].innerText;
-        var item_id = $('#hidden_id')[0].value;
-        $.ajax({
-          url:'/minus',
-          method:'POST',
-          data:{
-            count: count,
-            item_id: item_id
-          },
-          success: function(response){
-            count--;
-            $('#count')[0].innerHTML=count;
-            var price = $('#price')[0].value;
-            var totalprice = price*count;
-            $('#totalprice')[0].innerText='$'+ totalprice;
-          },
-          error: function(xhr, status, error) {
-            console.error('Error item count:', error);
-          }
-        })
-      })
-       // Function to update subtotal
-       function updateSubtotal() {
-        var subtotal = 0;
-        $('.card').each(function() {
-          var count = parseInt($(this).find('#count').text());
-          console.log("count",count);
-          var price = parseFloat($(this).find('#price').val());
-          console.log("price",price);
-          subtotal += count * price;
-          console.log("subtotal",subtotal);
-        });
-        $('#subtotal').text('$' + subtotal.toFixed(2));
-      }
 
-      // Initial call to update subtotal when the page loads
-      updateSubtotal();
+function onIncrease(item_id){
+
+  var count = $('#count_'+item_id)[0].innerText;
+  $.ajax({
+    url:'/add',
+    method:'POST',
+    data:{
+      count: count,
+      item_id: item_id
+    },
+    success: function(response){
+      count++;
+      $('#count_'+item_id)[0].innerHTML=count;
+      var price = $('#price_'+item_id)[0].value;
+      var totalprice = price*count;
+      $('#totalprice_'+item_id)[0].innerText='$'+ totalprice;
+    },
+    error: function(xhr, status, error) {
+      console.error('Error item count:', error);
     }
-  )
+  });
+}
+
+      // //minus function
+      // $('.decrease').click(function(){
+      //   var count = $('#count')[0].innerText;
+      //   var item_id = $('#hidden_id')[0].value;
+      //   $.ajax({
+      //     url:'/minus',
+      //     method:'POST',
+      //     data:{
+      //       count: count,
+      //       item_id: item_id
+      //     },
+      //     success: function(response){
+      //       count--;
+      //       $('#count')[0].innerHTML=count;
+      //       var price = $('#price')[0].value;
+      //       var totalprice = price*count;
+      //       $('#totalprice')[0].innerText='$'+ totalprice;
+      //     },
+      //     error: function(xhr, status, error) {
+      //       console.error('Error item count:', error);
+      //     }
+      //   })
+      // })
+       // Function to update subtotal
+      //  function updateSubtotal() {
+      //   var subtotal = 0;
+      //   $('.card').each(function() {
+      //     var count = parseInt($(this).find('#count').text());
+      //     console.log("count",count);
+      //     var price = parseFloat($(this).find('#price').val());
+      //     console.log("price",price);
+      //     subtotal += count * price;
+      //     console.log("subtotal",subtotal);
+      //   });
+      //   $('#subtotal').text('$' + subtotal.toFixed(2));
+      // }
+
+      // // Initial call to update subtotal when the page loads
+      // updateSubtotal();
+
 </script>
 @endsection

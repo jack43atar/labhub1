@@ -25,11 +25,11 @@ class CheckoutController extends Controller
     public function add(Request $request){
         $count = $request->count;
         $id = $request->item_id;
-        $count += 1;
-        DB::table('cart')->where(array('item_id'=>$id))->update(['count' => $count]);
-        $current_count = DB::table('cart')->where(array('item_id'=>$id))->select('count');
-
-        print_r(json_encode($current_count));
+        $count=(int)$count+1;
+        print_r($count." ".$id);
+        
+        $res = DB::table('cart')->where(array('id'=>$id))->update(array('count' => $count));
+        print_r(json_encode($res));
     }
     public function minus(Request $request){
         $count = $request->count;

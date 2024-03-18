@@ -11,11 +11,9 @@ class NavItemController extends Controller
 {
     public function store()
     {
-        $userId = Auth::id(); // Get the ID of the logged-in user
         $title = 'Store';
         $items = DB::table('items')->paginate(12);
-        $cartcount = DB::table('cart')->select('count')->count();
-        return view('site.store', compact('title','items','userId','cartcount'));
+        return view('site.store', compact('title','items'));
     }
 
     // lav Reservation

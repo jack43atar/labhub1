@@ -43,14 +43,20 @@
                     <div class="service-revert">
                         <b>selected lab</b>
                     </div>
-                    <div for="validationDefault01" class="sign radius-top radius-bottom pt-4 mt-4">
-                        Please sign name here.*<br>
-                        <input type="text" class="input-sign" placeholder="Your answer" id="validationDefault01" required>
+                    <div class="sign radius-top radius-bottom pt-4 mt-4 d-block">
+                        <label for="validationCustom03" class="">Please sign name here.*</label>
+                        <input type="text" class=" form-control input-sign" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                            Please provide a sign name.
+                        </div>
                     </div>
-                    <div for="validationDefault02" class="sign radius-top radius-bottom mt-4">
-                        Please select date here.*<br>
+                    <div class="sign radius-top radius-bottom pt-4 mt-4 d-block">
+                        <label for="validationCustom04" class="">Please select date here.*</label>
                         <p class="date">Date</p>
-                        <input type="date" class="input-date" placeholder="mm/dd/yyyy" id="validationDefault02" required>
+                        <input type="date" class=" form-control input-date w-25" id="validationCustom04" placeholder="mm/dd/yyyy" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid date.
+                        </div>
                     </div>
                     <div class="btn-group mt-2">
                         <div class="group">
@@ -83,5 +89,29 @@
     </div>
     
 @endsection
+@section('js')
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+    
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+    
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+    
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
 
+</script>
+@endsection
 

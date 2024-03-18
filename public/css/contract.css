@@ -178,4 +178,7 @@ body{
 }
 .checkbox:checked {
     accent-color: black;
-  }
+}
+.validate-text{
+    color: red;
+}

@@ -135,5 +135,7 @@ Route::post('submit-rfq/contact-us', 'contactUsController@index')->name('submitr
 Route::post('/homeSearch', 'IndexController@homeSearch')->name('home-search');
 // Checkout & Cart
 Route::post('/cart', 'CheckoutController@setcart')->name('cart');
+Route::post('/add', 'CheckoutController@add')->name('cart-add');
+Route::post('/minus', 'CheckoutController@minus')->name('cart-minus');
 Route::get('/checkout', 'CheckoutController@index')->name('checkout');
 Route::get('/checkout/toast', 'CheckoutController@toastnotification')->name('check.toast');

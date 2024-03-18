@@ -16,6 +16,7 @@
         bottom: 15px;
         right: 35px;
         width: 60px;
+        text-decoration: none !important;
         text-align: -webkit-right;
     }
     .sticky-icon{
@@ -43,7 +44,7 @@
     .cart-count{
         color: #121212;
         font-weight: 600;
-        background-color: #fcfcfd;
+        background-color: red;
         text-align: center;
         border-radius: 50px;
         width: 22px;
@@ -54,11 +55,14 @@
         color: #93afef;
         z-index: -1;
     }
+    .visibility-hidden{
+        visibility: hidden;
+    }
 </style>
 @endsection
 @section('content')
-    <a href="{{route('checkout')}}" class="sticky">
-        <div id="numberOfOrders" class="cart-count">{{ $cartcount }}</div>
+    <a id="cart" href="{{route('checkout')}}" class="sticky">
+        <div id="numberOfOrders" class="cart-count"></div>
         <i class="fa fa-shopping-cart fa-rotate-360 sticky sticky-icon cart-icon"></i>
     </a>
     <section class="store">
@@ -195,7 +199,7 @@
                                 </div>
                                 <div class="footer_right">
                                     <button type="button" class="btn btn-primary add-to-cart" data-item="{{ json_encode($item) }}">
-                                        <i class="fa fa-shopping-cart small-cart"></i>Add Cart
+                                        <i class="fa fa-shopping-cart small-cart fw-bold text-white">&nbsp;&nbsp;Add Cart</i>
                                     </button>
                                 </div>
                             </div>
@@ -214,6 +218,9 @@
 @section('js')
 <script>
     $(document).ready(function(){
+        //user login check part
+        var user = $('#hidden_id')[0].value;
+        if(user=="") $('#cart').addClass('visibility-hidden');
         // Attach click event handler to Add Cart buttons
         $('.add-to-cart').click(function(){
             var user = $('#hidden_id')[0].value;

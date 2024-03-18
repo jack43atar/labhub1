@@ -1,4 +1,16 @@
 @extends('layouts.app')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  .number-btn{
+    padding: 0;
+    border: none;
+    background: none;
+    width: 15px;
+  }
+  .number-btn:focus{
+    border:none;
+  }
+</style>
 @section('content')
 <section class="h-100 h-custom" style="background-color: #eee;">
   <div class="container py-5 h-100">
@@ -24,114 +36,45 @@
                         class="text-body">price <i class="fas fa-angle-down mt-1"></i></a></p>
                   </div>
                 </div>
-
-                <div class="card mb-3">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex flex-row align-items-center">
-                        <div>
-                          <img
-                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
-                            class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
+                @foreach($items as $item)
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <div class="d-flex flex-row align-items-center">
+                          <div>
+                            <!-- <img
+                              src="{{ $item->photourl }}"
+                              class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;"> -->
+                          </div>
+                          <div class="ms-3">
+                            <h5>{{ $item->name }}</h5>
+                          </div>
                         </div>
-                        <div class="ms-3">
-                          <h5>Iphone 11 pro</h5>
-                          <p class="small mb-0">256GB, Navy Blue</p>
+                        <div class="d-flex flex-row align-items-center">
+                          <div style="width: 120px;" class="d-flex">
+                            <h5 id="count" class="fw-normal mb-0">
+                              {{ $item->count }}
+                            </h5>
+                            <div class="position-relative">
+                              <button type="button" class="number-btn position-absolute add" id="add">
+                                <i class="fa fa-sort-up"></i>
+                              </button>
+                              <button type="button" class="number-btn position-absolute mt-2 minus" id="minus">
+                                <i class="fa fa-sort-down"></i>  
+                              </button>
+                            </div>
+                          </div>
+                          <div style="width: 80px;">
+                            <h5 class="mb-0" id="totalprice" >${{ ($item->price)*($item->count) }}</h5>
+                          </div>
+                          <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
                         </div>
-                      </div>
-                      <div class="d-flex flex-row align-items-center">
-                        <div style="width: 50px;">
-                          <h5 class="fw-normal mb-0">2</h5>
-                        </div>
-                        <div style="width: 80px;">
-                          <h5 class="mb-0">$900</h5>
-                        </div>
-                        <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
                       </div>
                     </div>
                   </div>
-                </div>
-
-                <div class="card mb-3">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex flex-row align-items-center">
-                        <div>
-                          <img
-                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img2.webp"
-                            class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
-                        </div>
-                        <div class="ms-3">
-                          <h5>Samsung galaxy Note 10 </h5>
-                          <p class="small mb-0">256GB, Navy Blue</p>
-                        </div>
-                      </div>
-                      <div class="d-flex flex-row align-items-center">
-                        <div style="width: 50px;">
-                          <h5 class="fw-normal mb-0">2</h5>
-                        </div>
-                        <div style="width: 80px;">
-                          <h5 class="mb-0">$900</h5>
-                        </div>
-                        <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card mb-3">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex flex-row align-items-center">
-                        <div>
-                          <img
-                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img3.webp"
-                            class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
-                        </div>
-                        <div class="ms-3">
-                          <h5>Canon EOS M50</h5>
-                          <p class="small mb-0">Onyx Black</p>
-                        </div>
-                      </div>
-                      <div class="d-flex flex-row align-items-center">
-                        <div style="width: 50px;">
-                          <h5 class="fw-normal mb-0">1</h5>
-                        </div>
-                        <div style="width: 80px;">
-                          <h5 class="mb-0">$1199</h5>
-                        </div>
-                        <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card mb-3 mb-lg-0">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex flex-row align-items-center">
-                        <div>
-                          <img
-                            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img4.webp"
-                            class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
-                        </div>
-                        <div class="ms-3">
-                          <h5>MacBook Pro</h5>
-                          <p class="small mb-0">1TB, Graphite</p>
-                        </div>
-                      </div>
-                      <div class="d-flex flex-row align-items-center">
-                        <div style="width: 50px;">
-                          <h5 class="fw-normal mb-0">1</h5>
-                        </div>
-                        <div style="width: 80px;">
-                          <h5 class="mb-0">$1799</h5>
-                        </div>
-                        <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  <input type="hidden" value="{{$item->item_id}}" class="hidden" id="hidden_id"/>
+                  <input type="hidden" value="{{$item->price}}" class="hidden" id="price"/>
+                @endforeach
 
               </div>
               <div class="col-lg-5">
@@ -161,9 +104,9 @@
                       </div>
 
                       <div class="form-outline form-white mb-4">
-                        <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
+                        <input type="text" id="card_number" class="form-control form-control-lg" siez="17"
                           placeholder="1234 5678 9012 3457" minlength="19" maxlength="19" />
-                        <label class="form-label" for="typeText">Card Number</label>
+                        <label class="form-label" for="card_number">Card Number</label>
                       </div>
 
                       <div class="row mb-4">
@@ -176,9 +119,9 @@
                         </div>
                         <div class="col-md-6">
                           <div class="form-outline form-white">
-                            <input type="password" id="typeText" class="form-control form-control-lg"
+                            <input type="password" id="pass" class="form-control form-control-lg"
                               placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
-                            <label class="form-label" for="typeText">Cvv</label>
+                            <label class="form-label" for="pass">Cvv</label>
                           </div>
                         </div>
                       </div>
@@ -189,7 +132,7 @@
 
                     <div class="d-flex justify-content-between">
                       <p class="mb-2">Subtotal</p>
-                      <p class="mb-2">$4798.00</p>
+                      <p class="mb-2" id="subtotal">$</p>
                     </div>
 
                     <div class="d-flex justify-content-between">
@@ -222,4 +165,73 @@
     </div>
   </div>
 </section>
+@endsection
+@section('js')
+<script>
+  $(document).ready(function(){
+      // add function
+      $('.add').click(function(){
+        var count = $('#count')[0].innerText;
+        var item_id = $('#hidden_id')[0].value;
+        $.ajax({
+          url:'/add',
+          method:'POST',
+          data:{
+            count: count,
+            item_id: item_id
+          },
+          success: function(response){
+            count++;
+            $('#count')[0].innerHTML=count;
+            var price = $('#price')[0].value;
+            var totalprice = price*count;
+            $('#totalprice')[0].innerText='$'+ totalprice;
+          },
+          error: function(xhr, status, error) {
+            console.error('Error item count:', error);
+          }
+        })
+      })
+      //minus function
+      $('.minus').click(function(){
+        var count = $('#count')[0].innerText;
+        var item_id = $('#hidden_id')[0].value;
+        $.ajax({
+          url:'/minus',
+          method:'POST',
+          data:{
+            count: count,
+            item_id: item_id
+          },
+          success: function(response){
+            count--;
+            $('#count')[0].innerHTML=count;
+            var price = $('#price')[0].value;
+            var totalprice = price*count;
+            $('#totalprice')[0].innerText='$'+ totalprice;
+          },
+          error: function(xhr, status, error) {
+            console.error('Error item count:', error);
+          }
+        })
+      })
+       // Function to update subtotal
+       function updateSubtotal() {
+        var subtotal = 0;
+        $('.card').each(function() {
+          var count = parseInt($(this).find('#count').text());
+          console.log("count",count);
+          var price = parseFloat($(this).find('#price').val());
+          console.log("price",price);
+          subtotal += count * price;
+          console.log("subtotal",subtotal);
+        });
+        $('#subtotal').text('$' + subtotal.toFixed(2));
+      }
+
+      // Initial call to update subtotal when the page loads
+      updateSubtotal();
+    }
+  )
+</script>
 @endsection

@@ -195,40 +195,6 @@
 @endsection
 @section('js')
     <script>
-        // function validate() {
-        //     var checkboxes = document.getElementsByName('check');
-        //     var isChecked = false;
-        //     for (var i = 0; i < checkboxes.length; i++) {
-        //         if (checkboxes[i].checked) {
-        //             isChecked = true;
-        //             break;
-        //         }
-        //     }
-        //     if (!isChecked) {
-        //         alert('Please select at least one option.');
-        //         return false; // Prevent form submission
-        //     }
-        // }
-
-        // (function () {
-        // 'use strict'
-
-        // // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        // var forms = document.querySelectorAll('.needs-validation')
-
-        // // Loop over them and prevent submission
-        // Array.prototype.slice.call(forms)
-        //     .forEach(function (form) {
-        //     form.addEventListener('submit', function (event) {
-        //         if (!form.checkValidity()) {
-        //         event.preventDefault()
-        //         event.stopPropagation()
-        //         }
-
-        //         form.classList.add('was-validated')
-        //     }, false)
-        //     })
-        // })()
         (function () {
             'use strict';
 
@@ -244,6 +210,7 @@
                     if (!checkbox1.checked && !checkbox2.checked) {
                         event.preventDefault();
                         event.stopPropagation();
+                        alert("You must select at least by");
                     } else {
                         form.classList.add('was-validated');
                     }

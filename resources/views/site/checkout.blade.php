@@ -248,6 +248,7 @@ function onDelete(item_id){
     },
     success: function(response){
       console.log(response);
+      alert("Are you sure you want to delete this item?")
       $('#card_'+item_id).addClass('d-none');
       updateSubtotal();
     },

@@ -222,26 +222,6 @@
 @section('js')
 <script>
     $(document).ready(function(){
-        //initialize Number of Orders
-        // var user = $('#hidden_id')[0].value;
-        // var itemData = $(this).data('item');
-        //     itemData.user_id = user;
-        //     // Send item data via Ajax to the server
-        //     $.ajax({
-        //         url: '/cart',
-        //         method: 'POST',
-        //         data: itemData,
-        //         success: function(response){
-        //             // Handle success response
-        //             $('#numberOfOrders')[0].innerHTML=response;
-        //             console.log(response);
-        //         },
-        //         error: function(xhr, status, error){
-        //             // Handle error response
-        //             console.error('Error adding item to cart:', error);
-        //         }
-        //     });
-        //user login check part
         var user = $('#hidden_id')[0].value;
         if(user=="") $('#cart').addClass('visibility-hidden');
         // Attach click event handler to Add Cart buttons

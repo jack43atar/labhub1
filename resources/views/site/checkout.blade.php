@@ -1,3 +1,5 @@
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 @extends('layouts.app')
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -240,20 +242,40 @@ function onDecrease(item_id){
 }
 
 function onDelete(item_id){
-  $.ajax({
-    url:'/delete',
-    method:'POST',
-    data:{
-      item_id: item_id
-    },
-    success: function(response){
-      console.log(response);
-      alert("Are you sure you want to delete this item?")
-      $('#card_'+item_id).addClass('d-none');
-      updateSubtotal();
-    },
-    error: function(xhr, status, error) {
-      console.error('Error item count:', error);
+  swal({
+    title: "Are you sure?",
+    text: "Once deleted, you will not be able to recover this item!",
+    icon: "warning",
+    buttons: true,
+    dangerMode: true,
+  })
+  .then((willDelete) => {
+    if (willDelete) {
+      // If user confirms deletion
+      $.ajax({
+        url:'/delete',
+        method:'POST',
+        data:{
+          item_id: item_id
+        },
+        success: function(response){
+          console.log(response);
+          $('#card_'+item_id).addClass('d-none');
+          updateSubtotal();
+          swal("Poof! Your item has been deleted!", {
+            icon: "success",
+          });
+        },
+        error: function(xhr, status, error) {
+          console.error('Error item count:', error);
+          swal("Oops! Something went wrong!", {
+            icon: "error",
+          });
+        }
+      });
+    } else {
+      // If user cancels deletion
+      swal("Your item is safe!");
     }
   });
 }

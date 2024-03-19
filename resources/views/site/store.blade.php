@@ -36,8 +36,9 @@
         text-align: center;
     }
     .small-cart{
-        font-size: 26px;
+        font-size: 20px;
         padding-right: 20px;
+        font-weight: 600;
         color: black;
         opacity: 0.7;
     }
@@ -52,11 +53,14 @@
         margin-right: 7px;
     }
     .cart-icon{
-        color: #93afef;
+        color: black;
         z-index: -1;
     }
     .visibility-hidden{
         visibility: hidden;
+    }
+    .btn-width{
+        width: 48px;
     }
 </style>
 @endsection
@@ -198,8 +202,8 @@
                                     </div> -->
                                 </div>
                                 <div class="footer_right">
-                                    <button type="button" class="btn btn-primary add-to-cart" data-item="{{ json_encode($item) }}">
-                                        <i class="fa fa-shopping-cart small-cart fw-bold text-white">&nbsp;&nbsp;Add Cart</i>
+                                    <button type="button" class="btn btn-outline-danger btn-width add-to-cart" data-item="{{ json_encode($item) }}">
+                                        <i class="fa fa-cart-plus small-cart"></i>
                                     </button>
                                 </div>
                             </div>

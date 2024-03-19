@@ -13,13 +13,6 @@ class CheckoutController extends Controller
             ->select('items.photourl','items.name','items.price','cart.count','cart.item_id','cart.id')
             ->join('items','items.id','=','cart.item_id')
             ->get();
-        // $exist = DB::table('cart')->count();
-        // dd($exist);
-        // $subtotal = DB::table('cart')
-        // ->select('items.price','cart.count')
-        // ->join('items','items.id','=', 'cart.item_id')
-        // ->get();
-        // dd($subtotal); 
         return view('site.checkout',compact('items'));
     }
     public function add(Request $request){
@@ -58,5 +51,10 @@ class CheckoutController extends Controller
         $number = DB::table('cart')->where(array('user_id'=>$user_id,'paid'=>0))->count();
         print_r(json_encode($number));
 
+    }
+    public function delete(Request $request){
+        $id = $request->item_id;
+        DB::table('cart')->where('id', $id)->delete();
+        print_r(json_encode("ok"));
     }
 }

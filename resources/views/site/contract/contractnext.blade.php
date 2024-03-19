@@ -41,19 +41,19 @@
                         Service Recipient:
                     </div>
                     <div class="service-revert">
-                        <b>selected lab</b>
+                        <b id="selected_lab">selected lab</b>
                     </div>
                     <div class="sign radius-top radius-bottom pt-4 mt-4 d-block">
-                        <label for="validationCustom03" class="">Please sign name here.*</label>
-                        <input type="text" class=" form-control input-sign" id="validationCustom03" required>
+                        <label for="validationsign" class="">Please sign name here.*</label>
+                        <input type="text" class=" form-control input-sign" id="validationsign" required>
                         <div class="invalid-feedback">
                             Please provide a sign name.
                         </div>
                     </div>
                     <div class="sign radius-top radius-bottom pt-4 mt-4 d-block">
-                        <label for="validationCustom04" class="">Please select date here.*</label>
+                        <label for="validationdate" class="">Please select date here.*</label>
                         <p class="date">Date</p>
-                        <input type="date" class=" form-control input-date w-25" id="validationCustom04" placeholder="mm/dd/yyyy" required>
+                        <input type="date" class=" form-control input-date w-25" id="validationdate" placeholder="mm/dd/yyyy" required>
                         <div class="invalid-feedback">
                             Please provide a valid date.
                         </div>
@@ -66,7 +66,7 @@
                                 </a>
                                 <button type="submit" class="submit-btn">Submit</button>
                             </div>
-                            <button type="button" class="btn-clear">Clear form</button>
+                            <button type="button" class="btn-clear" onclick="clearForm()">Clear form</button>
                         </div>
                     </div>
                 </form>
@@ -103,15 +103,22 @@
         .forEach(function (form) {
           form.addEventListener('submit', function (event) {
             if (!form.checkValidity()) {
-              event.preventDefault()
-              event.stopPropagation()
+                event.preventDefault()
+                event.stopPropagation()
+                alert("Input Data!!!");
             }
     
             form.classList.add('was-validated')
           }, false)
         })
+        // Clear Form
     })()
-
+    function clearForm(){
+        $('#selected_lab').text("Selected_Lab");
+        $('#validationsign').val("");
+        $('#validationdate').val("");
+    }
+    
 </script>
 @endsection
 
